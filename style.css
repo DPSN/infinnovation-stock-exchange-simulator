@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400);
+body {
+    margin: 0%;
+    background-color: #111;
+}
+.wrapper {
+    background-image: url(images/bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.header {
+    background-attachment: fixed;
+    width: 100%;
+    background-color: rgba(30%, 30%, 30%, 0.5);
+    min-height: 100%;
+    text-align: center;
+}
+.header > h1 {
+    display: inline-block;
+    font-family: 'Raleway';
+    color: #fff;
+    margin: 5%;
+    margin-bottom: 2%;
+    margin-top: 0%;
+/*    background-color: rgba(10%, 10%, 10%, 0.8);*/
+}
+.header > h1 > small {
+    font-size: 50%;
+}
+.header > h1 > sup > #beta {
+    font-size: 60%;
+    background-color: #fff;
+    color: #156;
+    width: 100%;
+    border-radius: 10%;
+}
+.header > h1 > span{
+    font-size: 60%;
+}
+.header > #imageatr {
+    text-align: center;
+}
+.header > #imageatr > img {
+    width: 20%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    background-color: rgba(10%, 10%, 10%, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0%, 0%, 0%, 0.9);
+}
+.navbar {
+    width: 100%;
+    box-shadow: 0 0 40px rgba(0,0,0,0.9);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(70%, 70%, 70%, 0.99);
+    font-family: 'Raleway';
+}
+li {
+    float: left;
+}
+li:hover {
+    background-color: #ccc;
+}
+li > a {
+    display: block;
+    color: #222;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 120%;
+}
+.flogolink {
+    text-decoration: underline;
+    display: block;
+    color: #222;
+    text-align: center;
+    padding: 14px 16px;
+    text-transform: lowercase;
+}
+#togglemenu {
+    display: none;
+}
+#togglemenu > #menubutton {
+    text-align: right;
+}
+#togglemenu:hover {
+    background-color: rgba(70%, 70%, 70%, 0.99);
+}
+#menubutton {
+    font-size: 200%;
+    margin: 0%;
+}
+#menubutton > small {
+    font-size: 100%;
+}
+
+#flogo {
+    display: none;
+    background-color: rgba(70%, 70%, 70%, 0.99);
+}
+.content1 {
+    background-color: #eee;
+    color: #fff;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.foot {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway';
+    height: 120%;
+}
+.foot > h1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+}
+.foot > p {
+    text-align: left;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.heart {
+    color: #f30;
+    font-family: serif;
+    font-size: 120%;
+}
+.content2 {
+    height:600px;
+    background-color: #335;
+    background-attachment: fixed;
+}
+.content3 {
+    height:600px;
+    background-color: #333;
+    background-attachment: fixed;
+}
