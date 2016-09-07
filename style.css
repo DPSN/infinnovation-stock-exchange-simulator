@@ -107,9 +107,10 @@ li > a {
 }
 .content1 {
     background-color: #eee;
-    color: #fff;
+    color: #111;
     background-attachment: fixed;
     height: 100%;
+    text-align: center;
 }
 
 .foot {
@@ -144,4 +145,36 @@ li > a {
     height:600px;
     background-color: #333;
     background-attachment: fixed;
+}
+
+table {
+    margin: 5%;
+    display: inline-flex;
+    font-size: 3vh;
+}
+#difference {
+    font-size: 3vh;
+    width: 100%;
+}
+#value {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+#triangle {
+    float: left;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5vh solid transparent;
+    border-right: 5vh solid transparent;
+    transition: all 3s ease-in-out;
+}
+.not_inverted {
+  transform: rotateX(0deg);
+    border-bottom: 10vh solid green;
+}
+.inverted {
+    transform: rotateX(180deg);
+    border-bottom: 10vh solid red;
 }

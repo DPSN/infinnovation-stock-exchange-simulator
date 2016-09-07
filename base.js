@@ -43,8 +43,9 @@ var hideMenu = function () {
     navBar.style.position = null;
     navBar.style.top = null;
     document.querySelector('#flogo').style.display = 'none';
-    document.querySelector('.navbar').style.display = 'none';
-    $('.navbar').fadeIn();
+    document.querySelector('.navbar').style.display = 'block';
+//    $('.navbar').fadeIn();
+    
     var li = document.querySelectorAll('.navbar li');
     for(var i = 2; i < li.length; i++) {
         li[i].style.display = 'none';
