@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400);
+/*@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400);*/
 body {
     margin: 0%;
     background-color: #111;
@@ -13,18 +13,16 @@ body {
 .header {
     background-attachment: fixed;
     width: 100%;
-    background-color: rgba(30%, 30%, 30%, 0.5);
+    background-color: rgba(10%, 10%, 10%, 0.8);
     min-height: 100%;
     text-align: center;
 }
 .header > h1 {
-    display: inline-block;
     font-family: 'Raleway';
     color: #fff;
     margin: 5%;
     margin-bottom: 2%;
     margin-top: 0%;
-/*    background-color: rgba(10%, 10%, 10%, 0.8);*/
 }
 .header > h1 > small {
     font-size: 50%;
@@ -59,27 +57,27 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(70%, 70%, 70%, 0.99);
+    background-color: rgba(7, 7, 7, 0.99);;
     font-family: 'Raleway';
 }
 li {
     float: left;
 }
 li:hover {
-    background-color: #ccc;
+    background-color: #058;
 }
 li > a {
     display: block;
-    color: #222;
+    color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 120%;
 }
 .flogolink {
-    text-decoration: underline;
+/*    text-decoration: underline;*/
     display: block;
-    color: #222;
+    color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-transform: lowercase;
@@ -91,7 +89,7 @@ li > a {
     text-align: right;
 }
 #togglemenu:hover {
-    background-color: rgba(70%, 70%, 70%, 0.99);
+    background-color: rgba(7, 7, 7, 0.99);;
 }
 #menubutton {
     font-size: 200%;
@@ -103,16 +101,16 @@ li > a {
 
 #flogo {
     display: none;
-    background-color: rgba(70%, 70%, 70%, 0.99);
+    background-color: rgba(7, 7, 7, 0.99);;
 }
 .content1 {
-    background-color: #eee;
-    color: #111;
+    min-width: 100%;
+    background-color: #236;;
+    color: #fff;
     background-attachment: fixed;
-    height: 100%;
+    min-height: 100%;
     text-align: center;
 }
-
 .foot {
     width: 100%;
     background-color: #111;
@@ -148,33 +146,46 @@ li > a {
 }
 
 table {
-    margin: 5%;
-    display: inline-flex;
-    font-size: 3vh;
+    display: inline-table;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 80%;
+    font-family: 'Raleway';
+}
+th {
+    text-decoration: underline;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+td {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 #difference {
-    font-size: 3vh;
     width: 100%;
 }
 #value {
-    display: inline-block;
+    float: left;
+    display: block;
     text-align: center;
     width: 100%;
 }
 #triangle {
-    float: left;
-    display: inline-block;
     width: 0;
     height: 0;
-    border-left: 5vh solid transparent;
-    border-right: 5vh solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
     transition: all 3s ease-in-out;
 }
 .not_inverted {
-  transform: rotateX(0deg);
-    border-bottom: 10vh solid green;
+    transform: rotateX(0deg);
+    border-bottom: 10px solid green;
 }
 .inverted {
     transform: rotateX(180deg);
-    border-bottom: 10vh solid red;
+    border-bottom: 10px solid red;
 }
