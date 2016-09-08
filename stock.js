@@ -4,8 +4,10 @@
 var unInvertTriangle = function(triangle) {
     triangle.className = 'not_inverted';
 };
-var changeStock = function(triangle, gain, value) {
-      triangle.innerHTML = 'INR' + value;
-      if(gain) unInvertTriangle();
-      else invertTriangle();
+var changeStock = function(triangleGroup, gain, value) {
+      var triangleE = triangleGroup.childNodes[0];
+      var valueE = triangleGroup.childNodes[2];
+      valueE.innerHTML = 'INR' + value;
+      if(gain) unInvertTriangle(triangleE);
+      else invertTriangle(triangleE);
 };
