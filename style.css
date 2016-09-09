@@ -137,7 +137,8 @@ li > a {
 }
 table {
     display: inline-table;
-    margin: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     margin-left: 0;
     margin-right: 0;
     font-size: 90%;
@@ -162,26 +163,14 @@ td {
     padding-left: 1vw;
     padding-right: 1vw;
 }
-#difference {
-    width: 100%;
-}
-#value {
-    float: left;
-    text-align: center;
-    width: 100%;
-}
-#triangle {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    transition: all 3s ease-in-out;
+.triangle {
+    font-size: 300%;
 }
 .not_inverted {
     transform: rotateX(0deg);
-    border-bottom: 10px solid green;
+    color: green;
 }
 .inverted {
     transform: rotateX(180deg);
-    border-bottom: 10px solid red;
+    color: red;
 }
