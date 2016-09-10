@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-/*@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400);*/
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400);
 body {
     margin: 0%;
     background-color: #111;
@@ -79,6 +79,7 @@ li > a {
     text-align: center;
     padding: 14px 16px;
     text-transform: lowercase;
+    font-family: 'Amatic SC';
 }
 #togglemenu {
     display: none;
