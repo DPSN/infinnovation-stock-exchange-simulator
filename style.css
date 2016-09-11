@@ -51,7 +51,7 @@ body {
     width: 100%;
     box-shadow: 0 0 40px rgba(0,0,0,0.9);
 }
-ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -59,13 +59,13 @@ ul {
     background-color: rgba(7, 7, 7, 0.99);;
     font-family: 'Raleway';
 }
-li {
+.navbar li {
     float: left;
 }
-li:hover {
+.navbar li:hover {
     background-color: #058;
 }
-li > a {
+.navbar li > a {
     display: block;
     color: #fff;
     text-align: center;
@@ -173,4 +173,18 @@ td {
 .inverted {
     transform: rotateX(180deg);
     color: red;
+}
+
+.content1 h1 {
+    font-family: 'Amatic SC';
+    font-size: 300%;
+}
+
+.content1 li {
+    font-family: 'Raleway';
+    margin: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    font-size: 150%;
 }
