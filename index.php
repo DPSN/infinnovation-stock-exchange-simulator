@@ -22,7 +22,7 @@
                     <li id="togglemenu"><a href="#menu" id="menubutton">&equiv;</a></li>
                     <li id="flogo"><a class="flogolink">infinnovation<br><small>stock-exchange-simulator</small></a></li>
                     <li><a href="/">stocks overview<br><small>home</small></a></li>
-                    <li><a href="detail.html">stocks in detail<br><small>more details</small></a></li>
+                    <li><a href="detail.php">stocks in detail<br><small>more details</small></a></li>
                     <li><a href="rules.html">rules<br><small>and regulations</small></a></li>
                     <li><a href="disclaimer.html">disclaimer<br><small>notice</small></a></li>
 	            </ul>
@@ -38,13 +38,13 @@
                             <th>% Change</th>
                         </tr>
                         <tr>
-                            <td>Apple</td>
+                            <td><a href="detail.php#Apple">Apple</a></td>
                             <td>INR 3400.00</td>
                             <td><span class="not_inverted triangle">&blacktriangle;</span>INR 21.80</td>
                             <td>3%</td>
                         </tr>
                         <tr>
-                            <td>Microsoft</td>
+                            <td><a href="detail.php#Microsoft">Microsoft</a></td>
                             <td>INR 1000.00</td>
                             <td><span class="inverted triangle">&blacktriangle;</span>INR 32.87</td>
                             <td>6%</td>
@@ -163,8 +163,8 @@
         </div>
         <footer>
             <div class="foot">
-                <br/>
-                <br/>&copy; Infinnovation'16.<br/>Made with <span class="heart">&hearts;</span> and JavaScript.<br/><br/>
+                <br>
+                <br>&copy; Infinnovation'16.<br><a href="http://infinnovation.co/" target="_system">www.infinnovation.co</a><br>Made with <span class="heart">&hearts;</span> and JavaScript.<br><br>
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>

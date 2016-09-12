@@ -131,6 +131,12 @@ body {
     margin-right: 5%;
     margin-left: 5%;
 }
+.foot a {
+    color: inherit;
+}
+.foot a:hover {
+    color: #ccc;
+}
 .heart {
     color: #f30;
     font-family: serif;
@@ -164,6 +170,9 @@ body {
     padding-left: 1vw;
     padding-right: 1vw;
 }
+.content1 td a {
+    color: inherit;
+}
 .triangle {
     font-size: 300%;
 }
@@ -176,6 +185,7 @@ body {
     color: red;
 }
 .content1 h1 {
+    text-decoration: underline;
     font-family: 'Amatic SC';
     font-size: 300%;
 }
