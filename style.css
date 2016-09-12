@@ -56,7 +56,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(7, 7, 7, 0.99);;
+    background-color: #222;
     font-family: 'Raleway';
 }
 .navbar li {
@@ -85,10 +85,11 @@ body {
     display: none;
 }
 #togglemenu > #menubutton {
-    text-align: right;
+    text-align: left;
+    float: left;
 }
 #togglemenu:hover {
-    background-color: rgba(7, 7, 7, 0.99);;
+    background-color: #222;;
 }
 #menubutton {
     font-size: 200%;
@@ -100,7 +101,7 @@ body {
 
 #flogo {
     display: none;
-    background-color: rgba(7, 7, 7, 0.99);;
+    background-color: #222;;
 }
 .content1 {
     overflow-x: auto;
@@ -135,7 +136,7 @@ body {
     font-family: serif;
     font-size: 120%;
 }
-table {
+.content1 table {
     display: inline-table;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -144,20 +145,20 @@ table {
     font-size: 90%;
     font-family: 'Raleway';
 }
-tr:nth-child(odd) {
+.content1 tr:nth-child(odd) {
     background-color: #222;
 }
-tr:nth-child(even) {
+.content1 tr:nth-child(even) {
     background-color: #f1f1f1;
     color: #000;
 }
-th {
+.content1 th {
     padding-top: 2vh;
     padding-bottom: 2vh;
     padding-left: 2vw;
     padding-right: 2vw;
 }
-td {
+.content1 td {
     padding-top: 1vh;
     padding-bottom: 1vh;
     padding-left: 1vw;
@@ -174,12 +175,10 @@ td {
     transform: rotateX(180deg);
     color: red;
 }
-
 .content1 h1 {
     font-family: 'Amatic SC';
     font-size: 300%;
 }
-
 .content1 li {
     font-family: 'Raleway';
     margin: 5%;
@@ -187,4 +186,8 @@ td {
     margin-bottom: auto;
     text-align: left;
     font-size: 150%;
+}
+
+canvas.chart {
+    display: inline-block;
 }
