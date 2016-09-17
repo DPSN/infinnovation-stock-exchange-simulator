@@ -15,12 +15,6 @@ Last updated <?php echo date('d/m/y H:i:s'); ?><br>
         <th>Difference</th>
         <th>% Change</th>
     </tr>
-    <tr>
-        <td><a href="detail.php#Apple">Apple</a></td>
-        <td>INR 3400.00</td>
-        <td><span class="not_inverted triangle">&blacktriangle;</span>INR 21.80</td>
-        <td>3%</td>
-    </tr>
     <?php
     while($ar = mysqli_fetch_array($res)) {
         $name = $ar['name'];
@@ -32,7 +26,7 @@ Last updated <?php echo date('d/m/y H:i:s'); ?><br>
             <td>INR $current</td>
             <td><span class=\"not_inverted triangle\">&blacktriangle;</span>INR $difference</td>
             <td>$percentage%</td>
-        </tr>";
+        </tr>\n";
         print($string);
     }
     ?>
