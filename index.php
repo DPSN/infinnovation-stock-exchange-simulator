@@ -30,134 +30,7 @@
         </header>
         <div class="content1">
             <br>
-                <table>
-                        <tr>
-                            <th>Stock Name</th>
-                            <th>Current</th>
-                            <th>Difference</th>
-                            <th>% Change</th>
-                        </tr>
-                        <tr>
-                            <td><a href="detail.php#Apple">Apple</a></td>
-                            <td>INR 3400.00</td>
-                            <td><span class="not_inverted triangle">&blacktriangle;</span>INR 21.80</td>
-                            <td>3%</td>
-                        </tr>
-                        <tr>
-                            <td><a href="detail.php#Microsoft">Microsoft</a></td>
-                            <td>INR 1000.00</td>
-                            <td><span class="inverted triangle">&blacktriangle;</span>INR 32.87</td>
-                            <td>6%</td>
-                        </tr>
-                        <tr>
-                            <td>GitHub</td>
-                            <td>INR 3400.00</td>
-                            <td><span class="not_inverted triangle">&blacktriangle;</span>INR 21.80</td>
-                            <td>3%</td>
-                        </tr>
-                        <tr>
-                            <td>Facebook</td>
-                            <td>INR 1000.00</td>
-                            <td><span class="inverted triangle">&blacktriangle;</span>INR 32.87</td>
-                            <td>6%</td>
-                        </tr>
-                        <tr>
-                            <td>GitHub</td>
-                            <td>INR 3400.00</td>
-                            <td><span class="not_inverted triangle">&blacktriangle;</span>INR 21.80</td>
-                            <td>3%</td>
-                        </tr>
-                        <tr>
-                            <td>Facebook</td>
-                            <td>INR 1000.00</td>
-                            <td><span class="inverted triangle">&blacktriangle;</span>INR 32.87</td>
-                            <td>6%</td>
-                        </tr>
-                        <tr>
-                            <td>GitHub</td>
-                            <td>INR 3400.00</td>
-                            <td><span class="not_inverted triangle">&blacktriangle;</span>INR 21.80</td>
-                            <td>3%</td>
-                        </tr>
-                        <tr>
-                            <td>Facebook</td>
-                            <td>INR 1000.00</td>
-                            <td><span class="inverted triangle">&blacktriangle;</span>INR 32.87</td>
-                            <td>6%</td>
-                        </tr>
-                        <tr>
-                            <td>GitHub</td>
-                            <td>INR 3400.00</td>
-                            <td><span class="not_inverted triangle">&blacktriangle;</span>INR 21.80</td>
-                            <td>3%</td>
-                        </tr>
-                        <tr>
-                            <td>Facebook</td>
-                            <td>INR 1000.00</td>
-                            <td><span class="inverted triangle">&blacktriangle;</span>INR 32.87</td>
-                            <td>6%</td>
-                        </tr>
-                        <tr>
-                            <td>GitHub</td>
-                            <td>INR 3400.00</td>
-                            <td><span class="not_inverted triangle">&blacktriangle;</span>INR 21.80</td>
-                            <td>3%</td>
-                        </tr>
-                        <tr>
-                            <td>Facebook</td>
-                            <td>INR 1000.00</td>
-                            <td><span class="inverted triangle">&blacktriangle;</span>INR 32.87</td>
-                            <td>6%</td>
-                        </tr>
-                        <tr>
-                            <td>GitHub</td>
-                            <td>INR 3400.00</td>
-                            <td><span class="not_inverted triangle">&blacktriangle;</span>INR 21.80</td>
-                            <td>3%</td>
-                        </tr>
-                        <tr>
-                            <td>Facebook</td>
-                            <td>INR 1000.00</td>
-                            <td><span class="inverted triangle">&blacktriangle;</span>INR 32.87</td>
-                            <td>6%</td>
-                        </tr>
-                        <tr>
-                            <td>GitHub</td>
-                            <td>INR 3400.00</td>
-                            <td><span class="not_inverted triangle">&blacktriangle;</span>INR 21.80</td>
-                            <td>3%</td>
-                        </tr>
-                        <tr>
-                            <td>Facebook</td>
-                            <td>INR 1000.00</td>
-                            <td><span class="inverted triangle">&blacktriangle;</span>INR 32.87</td>
-                            <td>6%</td>
-                        </tr>
-                        <tr>
-                            <td>GitHub</td>
-                            <td>INR 3400.00</td>
-                            <td><span class="not_inverted triangle">&blacktriangle;</span>INR 21.80</td>
-                            <td>3%</td>
-                        </tr>
-                        <tr>
-                            <td>Facebook</td>
-                            <td>INR 1000.00</td>
-                            <td><span class="inverted triangle">&blacktriangle;</span>INR 32.87</td>
-                            <td>6%</td>
-                        </tr>
-                        <tr>
-                            <td>GitHub</td>
-                            <td>INR 3400.00</td>
-                            <td><span class="not_inverted triangle">&blacktriangle;</span>INR 21.80</td>
-                            <td>3%</td>
-                        </tr>
-                        <tr>
-                            <td>Facebook</td>
-                            <td>INR 1000.00</td>
-                            <td><span class="inverted triangle">&blacktriangle;</span>INR 32.87</td>
-                            <td>6%</td>
-                        </tr>
-                </table>
+                <div id="stocks"></div>
             <br>
             <br>
         </div>
@@ -168,6 +41,11 @@
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-        <script src="base.js"></script>
+        <script async src="base.js"></script>
+        <script src="stockupdate.js"></script>
     </body>
+    <script>
+        populate();
+        setInterval(populate, 10000);
+    </script>
 </html>

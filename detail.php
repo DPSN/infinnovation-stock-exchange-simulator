@@ -28,54 +28,11 @@
 	            </ul>
             </div>
         </header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+        <script src="base.js"></script>
         <div class="content1">
             <br>
-                <h1 id="Apple">Apple</h1>
-                <canvas id="apple" class="chart"></canvas>
-                <h1 id="Microsoft">Microsoft</h1>
-                <canvas id="microsoft" class="chart"></canvas>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.bundle.min.js"></script>
-                <script>
-                    var ctx = document.querySelectorAll(".chart");
-                    for(var i = 0; i < 2; i++) {
-                        var myChart = new Chart(ctx[i], {
-                            type: 'line',
-                            data: {
-                                labels: ["12:15PM", "01:00PM", "02:00PM", "02:05PM", "02:10PM", "02:59PM"],
-                                datasets: [{
-                                    label: 'Stock Value',
-                                    data: [12, 19, 3, 5, 2, 3],
-            //                        backgroundColor: [
-            //                            'rgba(255, 99, 132, 0.2)',
-            //                            'rgba(54, 162, 235, 0.2)',
-            //                            'rgba(255, 206, 86, 0.2)',
-            //                            'rgba(75, 192, 192, 0.2)',
-            //                            'rgba(153, 102, 255, 0.2)',
-            //                            'rgba(255, 159, 64, 0.2)'
-            //                        ],
-            //                        borderColor: [
-            //                            'rgba(255,99,132,1)',
-            //                            'rgba(54, 162, 235, 1)',
-            //                            'rgba(255, 206, 86, 1)',
-            //                            'rgba(75, 192, 192, 1)',
-            //                            'rgba(153, 102, 255, 1)',
-            //                            'rgba(255, 159, 64, 1)'
-            //                        ],
-                                    borderWidth: 1
-                                }]
-                            },
-                            options: {
-                                scales: {
-                                    yAxes: [{
-                                        ticks: {
-                                            beginAtZero:true
-                                        }
-                                    }]
-                                }
-                            }
-                        });
-                    }
-                </script>
+                
             <br>
             <br>
         </div>
@@ -85,7 +42,5 @@
                 <br/>&copy; Infinnovation'16.<br/>Made with <span class="heart">&hearts;</span> and JavaScript.<br/><br/>
             </div>
         </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-        <script src="base.js"></script>
     </body>
 </html>

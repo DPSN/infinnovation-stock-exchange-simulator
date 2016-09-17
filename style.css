@@ -109,7 +109,7 @@ body {
     background-color: #236;;
     color: #fff;
     background-attachment: fixed;
-    min-height: 80vh;
+    min-height: 100vh;
     height: 120%;
     text-align: center;
 }
@@ -141,6 +141,9 @@ body {
     color: #f30;
     font-family: serif;
     font-size: 120%;
+}
+.content1 div#stocks {
+    font-family: 'Raleway';
 }
 .content1 table {
     display: inline-table;
@@ -197,7 +200,6 @@ body {
     text-align: left;
     font-size: 150%;
 }
-
 canvas.chart {
     display: inline-block;
 }
