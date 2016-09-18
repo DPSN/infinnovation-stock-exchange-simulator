@@ -85,18 +85,20 @@ $sector = $_GET['sector'];
                     $currentar[] = $ar['current'];
                 }
                 
-                $timestr = "[";
-                $currentstr = "[";
+                // external code snippet
+                function js_str($s)
+                {
+                    return '"' . addcslashes($s, "\0..\37\"\\") . '"';
+                }
+
+                function js_array($array)
+                {
+                    $temp = array_map('js_str', $array);
+                    return '[' . implode(',', $temp) . ']';
+                }
                 
-                foreach($timear as $time) {
-                    $timestr = $timestr.$time.",";
-                }
-                $timestr = $timestr."]";
-                    
-                foreach($currentar as $current) {
-                    $currentstr = $currentstr.$current.",";
-                }
-                $currentstr = "]";
+                $timestr = js_array($timear);
+                $currentstr = js_array($currentar);
                 
                 print("chart('$name', $timestr, $currentstr);\n");
             }
