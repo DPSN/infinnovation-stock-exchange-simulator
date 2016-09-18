@@ -1,3 +1,9 @@
+<?php
+if(!isset($_GET['sector'])) {
+    die();
+}
+$sector = $_GET['sector'];
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -32,14 +38,32 @@
         <script async src="base.js"></script>
         <div class="content1">
             <br>
-                <h1>TCS</h1>
-                <p>Tata Consultancy Services Limited (TCS) is an Indian multinational information technology (IT) service, consulting and business solutions company headquartered in Mumbai, Maharashtra. It is a subsidiary of the Tata Group and operates in 46 countries. TCS is one of the largest Indian companies by market capitalization ($80 billion). TCS is now placed among the ‘Big 4’ most valuable IT services brands worldwide. In 2015, TCS is ranked 64th overall in the Forbes World's Most Innovative Companies ranking, making it both the highest-ranked IT services company and the first Indian company. It is the world's 10th largest IT services provider, measured by the revenues. As of December 2015, it is ranked 10th on the Fortune India 500 list.</p>
-                <canvas id="TCS"></canvas>
+                <?php
+
+                include_once('db.php');
+
+                $sql = "SELECT * FROM stocks WHERE sector=$sector;";
+                $res = mysqli_query($db, $sql);
+                
+                $stocknamelist = array();
+            
+                while($ar = mysqli_fetch_array($res)) {
+                    $name = $ar['name'];
+                    
+                    $stocknamelist[] = $name;
+                    
+                    $current = $ar['current'];
+                    $difference = $ar['difference'];
+                    $percentage = $ar['percentage'];
+                    $profile = $ar['profile'];
+                    $string = "<h1>$name</h1>
+                <p>$profile</p>
+                <canvas id=\"$name\"></canvas>
                 <br>
-                <br>
-                <h1>HDFC Bank</h1>
-                <p>HDFC Bank is an Indian banking and financial services company headquartered in Mumbai, Maharashtra. It has about 76,286 employees including 12,680 women and has a presence in Bahrain, Hong Kong and Dubai. HDFC Bank is the second largest private bank in India as measured by assets. It is the largest bank in India by market capitalization as of February 2016. It was ranked 69th in 2016 BrandZTM Top 100 Most Valuable Global Brands.</p>
-                <canvas id="HDFC Bank"></canvas>
+                <br>";
+                    print($string);
+                }
+                ?>
             <br>
             <br>
         </div>
