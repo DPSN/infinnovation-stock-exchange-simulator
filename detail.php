@@ -29,7 +29,7 @@
             </div>
         </header>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-        <script src="base.js"></script>
+        <script async src="base.js"></script>
         <div class="content1">
             <br>
                 
@@ -38,7 +38,6 @@
         </div>
         <footer>
             <div class="foot">
-                <br/>
                 <br/>&copy; Infinnovation'16.<br/>Made with <span class="heart">&hearts;</span> and JavaScript.<br/><br/>
             </div>
         </footer>
