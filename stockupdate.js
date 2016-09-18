@@ -8,6 +8,7 @@ var loadStocks = function(uri) {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             putInStocksDiv(this.responseText);
+            this.abort();
         }
     };
     xhttp.open("GET", uri, true);

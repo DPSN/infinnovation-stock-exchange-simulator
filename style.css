@@ -89,7 +89,7 @@ body {
     float: left;
 }
 #togglemenu:hover {
-    background-color: #222;;
+    background-color: #222;
 }
 #menubutton {
     font-size: 200%;
@@ -101,12 +101,12 @@ body {
 
 #flogo {
     display: none;
-    background-color: #222;;
+    background-color: #222;
 }
 .content1 {
     overflow-x: auto;
     min-width: 100%;
-    background-color: #236;;
+    background-color: #236;
     color: #fff;
     background-attachment: fixed;
     min-height: 100vh;
