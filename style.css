@@ -188,17 +188,21 @@ body {
     color: red;
 }
 .content1 h1 {
-    text-decoration: overline;
     font-family: 'Amatic SC';
     font-size: 300%;
 }
+.content1 ul {
+    margin-left: 0%;
+    margin-right: 5%;
+}
 .content1 li {
-    font-family: 'Raleway';
+    font-family: monospace;
     margin: 5%;
     margin-top: auto;
     margin-bottom: auto;
     text-align: left;
     font-size: 120%;
+    margin-bottom: 2%;
 }
 canvas.chart {
     display: inline-block;
