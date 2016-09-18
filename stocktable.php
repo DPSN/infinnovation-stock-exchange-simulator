@@ -2,7 +2,7 @@
 
 include_once('db.php');
 
-$sql = "SELECT * FROM stocks;";
+$sql = "SELECT * FROM stocks ORDER BY sector;";
 $res = mysqli_query($db, $sql);
 
 ?>
