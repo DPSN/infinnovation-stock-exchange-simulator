@@ -191,6 +191,10 @@ body {
     font-family: 'Amatic SC';
     font-size: 300%;
 }
+.content1 p {
+    font-family: 'Raleway';
+    margin: 5%;
+}
 .content1 ul {
     margin-left: 0%;
     margin-right: 5%;
@@ -205,5 +209,7 @@ body {
     margin-bottom: 2%;
 }
 canvas.chart {
-    display: inline-block;
+    display: block;
+    max-height: 600px;
+    max-width: 600px;
 }
