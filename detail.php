@@ -69,7 +69,7 @@ $sector = $_GET['sector'];
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
         <script src="chartjsinit.js"></script>
-        <script async>
+        <script>
             <?php
             // loop each stock name in the sector
             foreach($stocknamelist as $name) {
