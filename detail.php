@@ -46,7 +46,7 @@ $sector = $_GET['sector'];
                 $res = mysqli_query($db, $sql);
                 
                 $stocknamelist = array();
-            
+            // loop each stock name in the sector
                 while($ar = mysqli_fetch_array($res)) {
                     $name = $ar['name'];
                     
@@ -70,8 +70,37 @@ $sector = $_GET['sector'];
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
         <script src="chartjsinit.js"></script>
         <script async>
-            chart('TCS', ['18/09/16 01:03', '18/09/16 01:07', '18/09/16 01:09', '18/09/16 02:03', '18/09/16 02:06', '18/09/16 02:09', '18/09/16 03:03'], [1200, 1900, 3000, 1700, 6000, 3000, 700]);
-            chart('HDFC Bank', ['18/09/16 01:03', '18/09/16 01:07', '18/09/16 01:09', '18/09/16 02:03', '18/09/16 02:06', '18/09/16 02:09', '18/09/16 03:03'], [1200, 2900, 7000, 1200, 19000, 900, 800]);
+            <?php
+            // loop each stock name in the sector
+            foreach($stocknamelist as $name) {
+                $sql = "SELECT * FROM updates WHERE name='$name';";
+                $res = mysqli_query($db, $sql);
+                
+                $timear = array();
+                $currentar = array();
+                
+                // loop each update of current stock
+                while($ar = mysqli_fetch_array($res)) {
+                    $timear[] = $ar['time'];
+                    $currentar[] = $ar['current'];
+                }
+                
+                $timestr = "[";
+                $currentstr = "[";
+                
+                foreach($timear as $time) {
+                    $timestr = $timestr.$time.",";
+                }
+                $timestr = $timestr."]";
+                    
+                foreach($currentar as $current) {
+                    $currentstr = $currentstr.$current.",";
+                }
+                $currentstr = "]";
+                
+                print("chart('$name', $timestr, $currentstr);\n");
+            }
+            ?>
         </script>
         <footer>
             <div class="foot">
