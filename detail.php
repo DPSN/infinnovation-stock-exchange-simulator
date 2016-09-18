@@ -42,7 +42,7 @@ $sector = $_GET['sector'];
 
                 include_once('db.php');
 
-                $sql = "SELECT * FROM stocks WHERE sector=$sector;";
+                $sql = "SELECT * FROM stocks WHERE sector='$sector';";
                 $res = mysqli_query($db, $sql);
                 
                 $stocknamelist = array();
@@ -57,10 +57,10 @@ $sector = $_GET['sector'];
                     $percentage = $ar['percentage'];
                     $profile = $ar['profile'];
                     $string = "<h1>$name</h1>
-                <p>$profile</p>
-                <canvas id=\"$name\"></canvas>
-                <br>
-                <br>";
+                    <p>$profile</p>
+                    <canvas id=\"$name\"></canvas>
+                    <br>
+                    <br>";
                     print($string);
                 }
                 ?>
