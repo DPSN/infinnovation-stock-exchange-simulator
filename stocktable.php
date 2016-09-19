@@ -31,8 +31,8 @@ Last updated <?php echo date('d/m/y H:i:s'); ?><br>
             $sector_last = $sector;
         }
         
-        $string = "<tr>
-            <td><a href=\"detail.php#$name\">$name</a></td>
+        $string = "<tr class=\"persector $sector\">
+            <td><a href=\"detail.php?sector=$sector#$name\">$name</a></td>
             <td>INR $current</td>
             <td><span class=\"not_inverted triangle\">&blacktriangle;</span>INR $difference</td>
             <td>$percentage%</td>
