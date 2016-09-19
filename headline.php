@@ -37,7 +37,7 @@
 
                     include_once('db.php');
 
-                    $sql = "SELECT * FROM news ORDER BY time;";
+                    $sql = "SELECT * FROM news ORDER BY time DESC;";
                     $res = mysqli_query($db, $sql);
 
                     ?>
