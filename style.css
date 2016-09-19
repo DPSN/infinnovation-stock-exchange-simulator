@@ -250,6 +250,6 @@ table#news td:nth-child(odd) {
 table#news td:nth-child(even) {
 	text-align: left;
 	display: flex;
-	font-size: 130%;
-	padding: 3%;
+	font-size: 100%;
+	padding: 4%;
 }
