@@ -1,8 +1,8 @@
 <?php
-if(!isset($_GET['sector'])) {
-    die();
+$sector = "";
+if(isset($_GET['sector'])) {
+    $sector = $_GET['sector'];
 }
-$sector = $_GET['sector'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,37 +42,40 @@ $sector = $_GET['sector'];
                 <?php
 
                 include_once('db.php');
-
+            
                 $sql = "SELECT * FROM stocks WHERE sector='$sector';";
+                if(strcmp($sector, "") == 0) {
+                    $sql = "SELECT * FROM stocks;";
+                }
                 $res = mysqli_query($db, $sql);
                 
                 $stocknamelist = array();
-            // loop each stock name in the sector
-                while($ar = mysqli_fetch_array($res)) {
-                    $name = $ar['name'];
-                    
-                    $stocknamelist[] = $name;
-                    
-                    $current = $ar['current'];
-                    $difference = $ar['difference'];
-                    $percentage = $ar['percentage'];
-                    $profile = $ar['profile'];
-                    
-                    $pclose = $ar['pclose'];
-                    $ovalue = $ar['ovalue'];
-                    $ucircuit = $ar['ucircuit'];
-                    $lcircuit = $ar['lcircuit'];
-                    $dividend = $ar['dividend'];
-                    $bvalue = $ar['bvalue'];
-                    
-                    $string = "<h1>$name</h1>
-                    <p>$profile<br><strong>Previous Close:</strong> $pclose<br><strong>Open Value:</strong> $ovalue<br><strong>Lower Circuit:</strong> $lcircuit<br><strong>Upper Circuit:</strong> $ucircuit<br><strong>Dividend:</strong> $dividend<br><strong>Book Value:</strong> $bvalue</p>
-                    <canvas id=\"$name\"></canvas>
-                    <br>
-                    <br>";
-                    print($string);
-                }
-                ?>
+                // loop each stock name in the sector
+                    while($ar = mysqli_fetch_array($res)) {
+                        $name = $ar['name'];
+
+                        $stocknamelist[] = $name;
+
+                        $current = $ar['current'];
+                        $difference = $ar['difference'];
+                        $percentage = $ar['percentage'];
+                        $profile = $ar['profile'];
+
+                        $pclose = $ar['pclose'];
+                        $ovalue = $ar['ovalue'];
+                        $ucircuit = $ar['ucircuit'];
+                        $lcircuit = $ar['lcircuit'];
+                        $dividend = $ar['dividend'];
+                        $bvalue = $ar['bvalue'];
+
+                        $string = "<h1>$name</h1>
+                        <p>$profile<br><strong>Previous Close:</strong> $pclose<br><strong>Open Value:</strong> $ovalue<br><strong>Lower Circuit:</strong> $lcircuit<br><strong>Upper Circuit:</strong> $ucircuit<br><strong>Dividend:</strong> $dividend<br><strong>Book Value:</strong> $bvalue</p>
+                        <canvas id=\"$name\"></canvas>
+                        <br>
+                        <br>";
+                        print($string);
+                    }
+                    ?>
             <br>
             <br>
         </div>
