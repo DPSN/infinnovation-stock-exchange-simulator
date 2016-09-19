@@ -19,9 +19,11 @@ Last updated <?php echo date('d/m/y H:i:s'); ?><br>
     $sector_last = "";
     while($ar = mysqli_fetch_array($res)) {
         
+        //array sql table result manipulation to print data
+        
         $name = $ar['name'];
         $current = $ar['current'];
-        $difference = $ar['difference'];
+        $difference = intval($ar['difference']);
         $percentage = $ar['percentage'];
         $sector = $ar['sector'];
         
@@ -31,12 +33,27 @@ Last updated <?php echo date('d/m/y H:i:s'); ?><br>
             $sector_last = $sector;
         }
         
-        $string = "<tr class=\"persector $sector\">
+        $string = "";
+        // if loss then inverted red triangle
+        if($difference >= 0) {
+            $string = "<tr class=\"persector $sector\">
             <td><a href=\"detail.php?sector=$sector#$name\">$name</a></td>
             <td>INR $current</td>
-            <td><span class=\"not_inverted triangle\">&blacktriangle;</span>INR $difference</td>
+            <td><span class=\"inverted triangle\">&#9650;</span>INR $difference</td>
             <td>$percentage%</td>
-        </tr>\n";
+            </tr>\n";
+        }
+        // else gain then inverted green triangle
+        else {
+            $difference = abs($difference);
+            $string = "<tr class=\"persector $sector\">
+            <td><a href=\"detail.php?sector=$sector#$name\">$name</a></td>
+            <td>INR $current</td>
+            <td><span class=\"not_inverted triangle\">&#9650;</span>INR $difference</td>
+            <td>$percentage%</td>
+            </tr>\n";
+        }
+        
         print($string);
     }
     ?>

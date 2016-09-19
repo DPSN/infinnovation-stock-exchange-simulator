@@ -188,7 +188,8 @@ body {
 	font-family: 'Raleway';
 }
 .triangle {
-    font-size: 300%;
+    font-size: 150%;
+    display: inline-block;
 }
 .not_inverted {
     transform: rotateX(0deg);
