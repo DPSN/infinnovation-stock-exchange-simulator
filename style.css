@@ -234,6 +234,9 @@ pre.sector {
     padding: 1%;
     font-family: 'Raleway';
 }
+table#news {
+    max-width: 700px;
+}
 table#news th {
 	display: none;
 }
