@@ -189,7 +189,6 @@ body {
 }
 .triangle {
     font-size: 150%;
-    display: inline-block;
 }
 .not_inverted {
     transform: rotateX(0deg);
