@@ -10,7 +10,7 @@ $res = mysqli_query($db, $sql);
 <?php date_default_timezone_set("Asia/Kolkata"); ?>
 Last updated <?php echo date('d/m/y H:i:s'); ?><br>
 
-<table>
+<table id="news">
     <tr>
         <th>Time</th>
         <th>News</th>

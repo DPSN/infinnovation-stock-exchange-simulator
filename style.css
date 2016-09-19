@@ -224,3 +224,24 @@ canvas.chart {
     max-height: 600px;
     max-width: 600px;
 }
+h1.sector {
+    font-family: 'Raleway';
+    text-align: left;
+}
+table#news th {
+	display: none;
+}
+table#news tr {
+	display: block;
+	margin: 5%;
+}
+table#news td:nth-child(odd) {
+	display: flex;
+	text-align: left;
+	font-size: 70%;
+}
+table#news td:nth-child(even) {
+	text-align: left;
+	display: flex;
+	font-size: 130%;
+}
