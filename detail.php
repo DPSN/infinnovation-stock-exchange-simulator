@@ -39,7 +39,7 @@ if(isset($_GET['sector'])) {
         <script async src="base.js"></script>
         <div class="content1">
             <br>
-                <h1 class="sector"><?php echo $sector; ?></h1>
+                <pre class="sector"><?php echo $sector; ?></pre>
                 <?php
 
                 include_once('db.php');
