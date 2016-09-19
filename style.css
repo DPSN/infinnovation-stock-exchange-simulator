@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:400);
+/*@import url('https://fonts.googleapis.com/css?family=Droid+Sans');*/
+
 body {
     margin: 0%;
     background-color: #111;
@@ -200,7 +202,7 @@ body {
     margin-right: 5%;
 }
 .content1 li {
-    font-family: monospace;
+    font-family: 'Raleway';
     margin: 5%;
     margin-top: auto;
     margin-bottom: auto;
