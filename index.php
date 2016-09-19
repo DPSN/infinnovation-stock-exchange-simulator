@@ -23,6 +23,7 @@
                     <li id="flogo"><a class="flogolink">infinnovation<br><small>stock-exchange-simulator</small></a></li>
                     <li><a href="/">stocks overview<br><small>home</small></a></li>
                     <li><a href="detail.php">stocks in detail<br><small>more details</small></a></li>
+                    <li><a href="headline.php">news<br><small>and headlines</small></a></li>
                     <li><a href="rules.html">rules<br><small>and regulations</small></a></li>
                     <li><a href="disclaimer.html">disclaimer<br><small>notice</small></a></li>
 	            </ul>

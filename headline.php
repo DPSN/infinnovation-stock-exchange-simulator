@@ -31,19 +31,44 @@
         </header>
         <div class="content1">
             <br>
-                <h1>Disclaimer</h1>
-                <ul>
-                    <li>The information contained in this app/website is for general information purposes only.</li>
-                    <li>We make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the app/website or the information, products, services, or related graphics contained on the app/website for any purpose.<br>Any reliance you place on such information is therefore strictly at your own risk.</li>
-                    <li>The general trend available on the app/website is for event (Infi-Invest) purposes only and has no intentions of manipulating the company policies and the stock prices.<br>The Stock Prices will be a hypothetical representation of the actual values. It has no links with the actual stock prices and company policies.</li>
-                    <li>Infinnovation Stock Exchange Simulator is not responsible for any errors, omissions or representations on any of our pages or on any links on any of our pages. Infinnovation Stock Exchange Simulator does not endorse in anyway any advertisers on our web pages. Please verify the veracity of all information on your own before undertaking any alliance.</li>
-                </ul>
+                <h1>Headlines</h1>
+                <div id="stocks">
+                    <?php
+
+                    include_once('db.php');
+
+                    $sql = "SELECT * FROM news ORDER BY time;";
+                    $res = mysqli_query($db, $sql);
+
+                    ?>
+                    
+                    <?php date_default_timezone_set("Asia/Kolkata"); ?>
+                    Last updated <?php echo date('d/m/y H:i:s'); ?><br>
+                    
+                    <table>
+                        <tr>
+                            <th>Time</th>
+                            <th>News</th>
+                        </tr>
+                        <?php
+                        while($ar = mysqli_fetch_array($res)) {
+                            $time = $ar['time'];
+                            $content = $ar['content'];
+                            $string = "<tr>
+                                <td>$time</td>
+                                <td>$content</td>
+                            </tr>\n";
+                            print($string);
+                        }
+                        ?>
+                    </table>
+                </div>
             <br>
             <br>
         </div>
         <footer>
             <div class="foot">
-                <br/>&copy; Infinnovation'16.<br/>Made with <span class="heart">&hearts;</span> and JavaScript.<br/><br/>
+                <br>&copy; Infinnovation'16.<br>Made with <span class="heart">&hearts;</span> and JavaScript.<br><br>
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
