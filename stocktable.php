@@ -16,11 +16,21 @@ Last updated <?php echo date('d/m/y H:i:s'); ?><br>
         <th>% Change</th>
     </tr>
     <?php
+    $sector_last = "";
     while($ar = mysqli_fetch_array($res)) {
+        
         $name = $ar['name'];
         $current = $ar['current'];
         $difference = $ar['difference'];
         $percentage = $ar['percentage'];
+        $sector = $ar['sector'];
+        
+        if(strcmp($sector,$sector_last) != 0) {
+            $a = "<tr><td class=\"sector\" colspan=\"4\">$sector</td></tr>\n";
+            print($a);
+            $sector_last = $sector;
+        }
+        
         $string = "<tr>
             <td><a href=\"detail.php#$name\">$name</a></td>
             <td>INR $current</td>
