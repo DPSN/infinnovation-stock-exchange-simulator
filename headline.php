@@ -32,37 +32,7 @@
         <div class="content1">
             <br>
                 <h1>Headlines</h1>
-                <div id="stocks">
-                    <?php
-
-                    include_once('db.php');
-
-                    $sql = "SELECT * FROM news ORDER BY time DESC;";
-                    $res = mysqli_query($db, $sql);
-
-                    ?>
-                    
-                    <?php date_default_timezone_set("Asia/Kolkata"); ?>
-                    Last updated <?php echo date('d/m/y H:i:s'); ?><br>
-                    
-                    <table>
-                        <tr>
-                            <th>Time</th>
-                            <th>News</th>
-                        </tr>
-                        <?php
-                        while($ar = mysqli_fetch_array($res)) {
-                            $time = $ar['time'];
-                            $content = $ar['content'];
-                            $string = "<tr>
-                                <td>$time</td>
-                                <td>$content</td>
-                            </tr>\n";
-                            print($string);
-                        }
-                        ?>
-                    </table>
-                </div>
+                <div id="stocks"></div>
             <br>
             <br>
         </div>
@@ -73,5 +43,10 @@
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
         <script async src="base.js"></script>
+        <script src="stockupdate.js"></script>
     </body>
+    <script>
+        populateNews();
+        setInterval(populateNews, 10000);
+    </script>
 </html>

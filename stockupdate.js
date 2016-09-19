@@ -15,6 +15,10 @@ var loadStocks = function(uri) {
     xhttp.send();
 }
 
-var populate = function() {
+var populateStocks = function() {
     loadStocks("stocktable.php");
+};
+
+var populateNews = function() {
+    loadStocks("newstable.php");
 };

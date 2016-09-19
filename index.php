@@ -45,7 +45,7 @@
         <script src="stockupdate.js"></script>
     </body>
     <script>
-        populate();
-        setInterval(populate, 10000);
+        populateStocks();
+        setInterval(populateStocks, 10000);
     </script>
 </html>
