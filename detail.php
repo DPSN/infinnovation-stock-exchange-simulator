@@ -70,7 +70,7 @@ if(isset($_GET['sector'])) {
                         $bvalue = $ar['bvalue'];
 
                         $string = "<h1>$name</h1>
-                        <p>$profile<br><strong>Previous Close:</strong> $pclose<br><strong>Open Value:</strong> $ovalue<br><strong>Lower Circuit:</strong> $lcircuit<br><strong>Upper Circuit:</strong> $ucircuit<br><strong>Dividend:</strong> $dividend<br><strong>Book Value:</strong> $bvalue</p>
+                        <p>$profile<br><br><strong>Previous Close:</strong> $pclose<br><strong>Open Value:</strong> $ovalue<br><strong>Lower Circuit:</strong> $lcircuit<br><strong>Upper Circuit:</strong> $ucircuit<br><strong>Dividend:</strong> $dividend<br><strong>Book Value:</strong> $bvalue</p>
                         <canvas id=\"$name\"></canvas>
                         <br>
                         <br>";
