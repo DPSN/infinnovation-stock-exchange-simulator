@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Restricted Content"
-AuthUserFile /var/lib/openshift/57d326757628e101210000b2/app-root/runtime/repo/updatepanel/.htpasswd
-Require valid-user

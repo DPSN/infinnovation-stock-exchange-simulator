@@ -1,0 +1,48 @@
+body {
+    font-family: 'Raleway';
+    margin: 8%;
+}
+th, td {
+    padding: 30px;
+    text-align: left;
+}
+p {
+    font-family: monospace;
+}
+img {
+    height: 15vh;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: flex;
+    padding: 2%;
+    margin: 1%;
+    margin-left: 0%;
+    background-color: rgba(10, 10, 10, 0.9);
+    color: #fff;
+    width: 50%;
+}
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+li a:hover {
+    text-decoration: underline;
+    color: #ccc;
+}
+a {
+    text-decoration: underline;
+    color: #000;
+}
+a:hover {
+    text-decoration: none;
+    color: #333;
+}
+iframe {
+    width: 95vw;
+    height: 95vh;
+    max-width: 900px;
+    margin: 2%;
+}
