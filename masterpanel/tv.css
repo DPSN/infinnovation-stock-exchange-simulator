@@ -156,14 +156,14 @@ body {
     font-size: 90%;
     font-family: 'Raleway';
 }
-.content1 tr:nth-child(odd) {
-    background-color: #222;
-}
-.content1 tr:nth-child(even) {
+.content1 tr {
+    display: inline-block;
     background-color: #f1f1f1;
     color: #000;
+    border: 2px solid white;
 }
 .content1 th {
+    display: none;
     padding-top: 2vh;
     padding-bottom: 2vh;
     padding-left: 2vw;
@@ -185,6 +185,7 @@ body {
     color: green;
 }
 .content1 td.sector {
+    display: none;
     padding-top: 3vh;
     padding-bottom: 3vh;
     padding-left: 3vw;

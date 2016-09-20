@@ -10,7 +10,7 @@
     <body>
         <img src="../../images/logo.png">
         <h1><a href="../">Infinnovation'16 Master Panel</a> | Stock Price Update Section</h1>
-        <p><sup>*</sup> Do not use this panel without the permission/authorisation by Infinnovation Stock Exchnage Board.</p>
+        <p><sup>*</sup> Do not use this panel without the permission/authorisation by Infinnovation Stock Exchange Board.</p>
         <br>
         <form>
         </form>
