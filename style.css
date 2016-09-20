@@ -178,6 +178,12 @@ body {
 .content1 td a {
     color: inherit;
 }
+.content1 td.loss {
+    color: red;
+}
+.content1 td.gain {
+    color: green;
+}
 .content1 td.sector {
     padding-top: 3vh;
     padding-bottom: 3vh;

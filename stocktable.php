@@ -40,17 +40,18 @@ Last updated <?php echo date('d/m/y H:i:s'); ?><br>
             <td><a href=\"detail.php?sector=$sector#$name\">$name</a></td>
             <td>INR $current</td>
             <td><span class=\"inverted triangle\">&#9650;</span>INR $difference</td>
-            <td>$percentage%</td>
+            <td class=\"loss\">$percentage%</td>
             </tr>\n";
         }
         // else gain then inverted green triangle
         else {
+            $percentage = abs($percentage);
             $difference = abs($difference);
             $string = "<tr class=\"persector $sector\">
             <td><a href=\"detail.php?sector=$sector#$name\">$name</a></td>
             <td>INR $current</td>
             <td><span class=\"not_inverted triangle\">&#9650;</span>INR $difference</td>
-            <td>$percentage%</td>
+            <td class=\"gain\">$percentage%</td>
             </tr>\n";
         }
         
