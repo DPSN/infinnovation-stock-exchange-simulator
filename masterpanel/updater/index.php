@@ -20,7 +20,7 @@
                 $sql = "SELECT name FROM stocks ORDER BY name;";
                 $res = mysqli_query($db, $sql);
                 
-                while($ar = mysqli_fetch_row($res)) {
+                while($ar = mysqli_fetch_array($res)) {
                     $name = $ar['name'];
                     $str = "<option value=\"$name\">$name</option>\n";
                     print($str);
@@ -29,11 +29,13 @@
             </select>
             <br>
             <input name="value" type="number">
+            <br>
             <select name="type">
                 <option value="current">Stock Price Update</option>
                 <option value="difference">Difference Update (+/-)</option>
                 <option value="percentage">Percentage Update (+/-)</option>
             </select>
+            <br>
             <button type="submit">Update Stock</button>
         </form>
         <br><br>
@@ -51,12 +53,6 @@
             print("<script>alert(\"Successfully posted your news item.\");</script>");
         }
         ?>
-        <footer>
-              &copy; Infinnovation'16.<br/>
-              Designed and Developed by <a href="https://facebook.com/swghosh" target="_blank" onclick="window.open('https://www.github.com/swghosh');">Swarup Ghosh</a>.<br>
-              <a href="https://twitter.com/SwG_Ghosh" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @SwG_Ghosh</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br/>
-        </footer>
         <iframe src="/"></iframe>
     </body>
 </html>
