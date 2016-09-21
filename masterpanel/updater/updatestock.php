@@ -10,11 +10,11 @@ if(isset($_POST['name']) == false || empty($_POST['name']) || isset($_POST['valu
     form_error();
 }
 
-$name = $_POST['name'];
-$value = intval($_POST['value']);
-$type = $_POST['type'];
+$name = mysqli_real_escape_string($db, htmlspecialchars($_POST['name']));
+$value = intval(mysqli_real_escape_string($db, htmlspecialchars($_POST['value'])));
+$type = mysqli_real_escape_string($db, htmlspecialchars($_POST['type']));
 
-$sql = "SELECT current FROM stocks WHERE name = '$name'";
+$sql = "SELECT current FROM stocks WHERE name = '$name';";
 $res = mysqli_query($db, $sql);
 
 $ar = mysqli_fetch_array($res);
