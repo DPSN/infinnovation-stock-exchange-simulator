@@ -12,7 +12,7 @@
         <h1><a href="../">Infinnovation'16 Stock Exchange Simulator Master Panel</a> | News Post Section</h1>
         <p><sup>*</sup> Do not use this panel without the permission/authorisation by Infinnovation Stock Exchange Board.</p>
         <br>
-        <form>
+        <form method="POST" action="postnews.php">
             <textarea name="message"></textarea>
             <br>
             <button type="submit">Post News</button>

@@ -49,6 +49,10 @@ iframe {
 textarea {
     width: 50vw;
     height: 30vh;
+    font-family: 'Raleway';
+}
+textarea:focus {
+    font-family: 'Raleway';
 }
 button {
     border: 2px solid black;
