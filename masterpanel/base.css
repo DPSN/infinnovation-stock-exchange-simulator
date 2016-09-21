@@ -46,3 +46,19 @@ iframe {
     max-width: 900px;
     margin: 2%;
 }
+textarea {
+    width: 50vw;
+    height: 30vh;
+}
+button {
+    border: 2px solid black;
+    background-color: #eee;
+    color: #111;
+    padding: 1%;
+    font-family: 'Raleway';
+    font-size: 120%;
+}
+button:hover {
+    color: #eee;
+    background-color: #111;
+}

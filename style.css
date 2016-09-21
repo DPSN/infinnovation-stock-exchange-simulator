@@ -178,6 +178,9 @@ body {
 .content1 td a {
     color: inherit;
 }
+.content1 td a:hover {
+    text-decoration: none;
+}
 .content1 td.loss {
     color: red;
 }
