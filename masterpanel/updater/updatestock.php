@@ -46,9 +46,9 @@ else {
 }
 
 // database query statements
-$sql = "UPDATE stocks SET current=$current_new, difference=$difference_new, percentage=$percentage_new WHERE name=$name;";
+$sql = "UPDATE stocks SET current=$current_new, difference=$difference_new, percentage=$percentage_new WHERE name='$name';";
 
-$sql2 = "INSERT INTO updates (name, current, difference, percentage) VALUES ($name, $current_new, $difference_new, $percentage);";
+$sql2 = "INSERT INTO updates (name, current, difference, percentage) VALUES ('$name', $current_new, $difference_new, $percentage);";
 
 if(mysqli_query($db, $sql) == false || mysqli_query($db, $sql2)) {
     form_error();

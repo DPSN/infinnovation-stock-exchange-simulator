@@ -3,7 +3,7 @@
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <title>Infinnovation Stock Exchange Simulator Master Panel | News Post Section</title>
+        <title>Infinnovation Stock Exchange Simulator Master Panel | Stock Price Update Section</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../base.css">
     </head>
