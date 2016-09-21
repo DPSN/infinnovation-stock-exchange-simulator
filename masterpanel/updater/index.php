@@ -12,6 +12,7 @@
         <h1><a href="../">Infinnovation'16 Stock Exchange Simulator Master Panel</a> | Stock Price Update Section</h1>
         <p><sup>*</sup> Do not use this panel without the permission/authorisation by Infinnovation Stock Exchange Board.</p>
         <br>
+        Update operation:<br>
         <form method="POST" action="updatestock.php">
             <select name="name">
                 <?php
@@ -28,13 +29,16 @@
                 ?>
             </select>
             <br>
+            <br>
             <input name="value" type="number">
+            <br>
             <br>
             <select name="type">
                 <option value="current">Stock Price Update</option>
                 <option value="difference">Difference Update (+/-)</option>
                 <option value="percentage">Percentage Update (+/-)</option>
             </select>
+            <br>
             <br>
             <button type="submit">Update Stock</button>
         </form>
@@ -47,10 +51,10 @@
         </footer>
         <?php
         if(isset($_GET['error'])) {
-            print("<script>alert(\"Error in previous form submission! News item not posted. Try again!\");</script>");
+            print("<script>alert(\"Error in previous form submission! Stock Price not updated. Try again!\");</script>");
         }
         else if(isset($_GET['success'])) {
-            print("<script>alert(\"Successfully posted your news item.\");</script>");
+            print("<script>alert(\"Successfully the stock price.\");</script>");
         }
         ?>
         <iframe src="/"></iframe>
