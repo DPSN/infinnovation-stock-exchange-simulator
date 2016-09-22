@@ -33,9 +33,9 @@
             <input name="value" type="number">
             <br>
             <br>
-            <input name="type" value="current">Stock Price Update<br>
-            <input name="type" value="difference">Difference Update (+/-)<br>
-            <input name="type" value="percentage">Percentage Update (+/-)<br>
+            <input name="type" type="radio" value="current">Stock Price Update<br>
+            <input name="type" type="radio" value="difference">Difference Update (+/-)<br>
+            <input name="type" type="radio" value="percentage">Percentage Update (+/-)<br>
             <br>
             <br>
             <button type="submit">Update Stock</button>
