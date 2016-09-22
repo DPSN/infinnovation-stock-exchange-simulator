@@ -1,3 +1,3 @@
-![Infinnovation 2016 Logo](https://s17.postimg.org/oovz3wp33/beveled_logo_transparent.png)
+![App](http://s15.postimg.org/7h1an6a4r/stockexchangesimulator_infinnovation_co_i_Phone.png)
 # Infinnovation Stock Exchange Simulator
 Built using Web technologies for cross platform support.
