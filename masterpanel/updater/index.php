@@ -55,6 +55,5 @@
             print("<script>alert(\"Successfully the stock price.\");</script>");
         }
         ?>
-        <iframe src="/"></iframe>
     </body>
 </html>

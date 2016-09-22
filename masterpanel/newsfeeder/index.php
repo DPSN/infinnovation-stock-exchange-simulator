@@ -32,6 +32,5 @@
             print("<script>alert(\"Successfully posted your news item.\");</script>");
         }
         ?>
-        <iframe src="/"></iframe>
     </body>
 </html>

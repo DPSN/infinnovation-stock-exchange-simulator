@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Infinnovation'16 Stock Exchange Simulator</title>
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="tv.css" type="text/css" />
         <meta name="theme-color" content="#336">
     </head>
     <body>
@@ -33,11 +33,45 @@
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-        <script async src="base.js"></script>
-        <script src="stockupdate.js"></script>
+        <script async src="../base.js"></script>
+        <script src="../stockupdate.js"></script>
     </body>
     <script>
-        populateStocksInit();
-        setInterval(populateStocksLater, 10000);
+        var loadStocksLater = function(uri) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var ds = document.querySelector('div#stocks');
+                var dh = document.querySelector('div#hidden');
+                dh.innerHTML = ds.innerHTML;
+                ds.innerHTML = this.responseText;
+                ds.id = "shown";
+                var dstrs = document.querySelectorAll("div#shown table tr");
+                var dhtrs = document.querySelectorAll("div#hidden table tr");
+                if(dstrs.length == dhtrs.length) {
+                    for(var i = 0; i < dstrs.length; i++) {
+                        if(dstrs[i].innerHTML !== dhtrs[i].innerHTML) {
+                            dstrs[i].style.backgroundColor = 'yellow';
+                            dstrs[i].style.color = '#000';
+                            var audio = new Audio("notification.mp3");
+                            audio.play();
+                        }
+                    }
+                }
+                ds.id = "stocks";
+                this.abort();
+            }
+        };
+        xhttp.open("GET", uri, true);
+        xhttp.send();
+        };
+        function refreshInit() {
+            loadStocksInit("../stocktable.php");
+        }
+        refreshInit();
+        function refreshLater() {
+            loadStocksLater("../stocktable.php");
+        }
+        setInterval(refreshLater, 10000);
     </script>
 </html>
