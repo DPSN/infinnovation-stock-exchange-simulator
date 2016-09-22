@@ -1,5 +1,5 @@
-var chart = function(id, labels, values) {
-    var ctx = document.getElementById(id).getContext('2d');
+var chartGenerate = function(id, labels, values) {
+    var ctx = document.getElementById("chart " + id).getContext('2d');
     var myChart = new Chart(ctx, {
       type: 'line',
       data: {

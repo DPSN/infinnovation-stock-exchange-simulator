@@ -28,7 +28,7 @@ Last updated <?php echo date('d/m/y H:i:s'); ?><br>
         $sector = $ar['sector'];
         
         if(strcmp($sector,$sector_last) != 0) {
-            $a = "<tr><td class=\"sector\" colspan=\"4\">$sector</td></tr>\n";
+            $a = "<tr><td class=\"sector\" colspan=\"4\"><a href=\"detail.php?sector=$sector\">$sector</a></td></tr>\n";
             print($a);
             $sector_last = $sector;
         }

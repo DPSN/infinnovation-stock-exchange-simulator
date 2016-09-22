@@ -69,9 +69,9 @@ if(isset($_GET['sector'])) {
                         $dividend = $ar['dividend'];
                         $bvalue = $ar['bvalue'];
 
-                        $string = "<h1>$name</h1>
+                        $string = "<h1 id=\"$name\">$name</h1>
                         <p>$profile<br><br><strong>Previous Close:</strong> $pclose<br><strong>Open Value:</strong> $ovalue<br><strong>Lower Circuit:</strong> $lcircuit<br><strong>Upper Circuit:</strong> $ucircuit<br><strong>Dividend:</strong> $dividend<br><strong>Book Value:</strong> $bvalue</p>
-                        <canvas id=\"$name\"></canvas>
+                        <canvas id=\"chart $name\"></canvas>
                         <br>
                         <br>";
                         print($string);
@@ -83,6 +83,7 @@ if(isset($_GET['sector'])) {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
         <script src="chartjsinit.js"></script>
         <script>
+            var main = function() {
             <?php
             // loop each stock name in the sector
             foreach($stocknamelist as $name) {
@@ -113,9 +114,11 @@ if(isset($_GET['sector'])) {
                 $timestr = js_array($timear);
                 $currentstr = js_array($currentar);
                 
-                print("chart('$name', $timestr, $currentstr);\n");
+                print("chartGenerate('$name', $timestr, $currentstr);\n");
             }
             ?>
+            };
+            $(document).ready(main);
         </script>
         <footer>
             <div class="foot">
