@@ -12,7 +12,7 @@
             <div class="wrapper">
                 <div class="header">
                     <br/>
-                    <div id="imageatr"><img src="images/logo.png"></div>
+                    <div id="imageatr"><img src="../images/logo.png"></div>
                     <h1>Infinnovation<br>Stock Exchange Simulator <sup><small id="beta">&nbsp;beta&nbsp;</small></sup><br/><span id="tagline">&quot;infi-Invest&quot;</span></h1>
                     <br/>
                 </div>
