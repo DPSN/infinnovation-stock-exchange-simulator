@@ -144,7 +144,7 @@ body {
     font-family: serif;
     font-size: 120%;
 }
-.content1 div#stocks {
+.content1 div#stocks, div#shown {
     font-family: 'Raleway';
 }
 .content1 table {
@@ -266,4 +266,7 @@ table#news td:nth-child(even) {
 .highlight {
     color: #000;
     background-color: yellow;
+}
+div#hidden {
+    display: none;
 }

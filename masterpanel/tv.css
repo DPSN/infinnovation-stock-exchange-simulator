@@ -293,3 +293,10 @@ table#news td:nth-child(even) {
 .persector.Oil.and.Gas {
     color: darkviolet;
 }
+.highlight {
+    color: #000;
+    background-color: yellow;
+}
+div#hidden {
+    display: none;
+}

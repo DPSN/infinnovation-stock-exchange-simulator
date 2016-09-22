@@ -32,7 +32,7 @@
         <div class="content1">
             <br>
                 <div id="stocks"></div>
-            <br>
+            <br><div id="hidden"></div>
             <br>
         </div>
         <footer>
@@ -48,7 +48,7 @@
         <script src="stockupdate.js"></script>
     </body>
     <script>
-        populateStocks();
-        setInterval(populateStocks, 10000);
+        populateStocksInit();
+        setInterval(populateStocksLater, 10000);
     </script>
 </html>
