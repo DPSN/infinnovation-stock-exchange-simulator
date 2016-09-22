@@ -14,12 +14,13 @@ $name = mysqli_real_escape_string($db, htmlspecialchars($_POST['name']));
 $value = intval(mysqli_real_escape_string($db, htmlspecialchars($_POST['value'])));
 $type = mysqli_real_escape_string($db, htmlspecialchars($_POST['type']));
 
-$sql = "SELECT current FROM stocks WHERE name = '$name';";
+$sql = "SELECT current, pclose FROM stocks WHERE name = '$name';";
 $res = mysqli_query($db, $sql);
 
 $ar = mysqli_fetch_array($res);
 
 $current_old = intval($ar['current']);
+$pclose = intval($ar['pclose']);
 
 $current_new = 0;
 $difference_new = 0;
@@ -28,18 +29,18 @@ $percentage_new = 0;
 // manipulate all data that needs to inserted into the database
 if(strcmp($type,'current') == 0) {
     $current_new = abs($value);
-    $difference_new = $current_old - $current_new;
-    $percentage_new = ($difference_new / $current_old) * 100;
+    $difference_new = $pclose - $current_new;
+    $percentage_new = ($difference_new / $pclose) * 100;
 }
 else if(strcmp($type,'difference') == 0) {
     $difference_new = -($value);
-    $percentage_new = ($difference_new / $current_old) * 100;
-    $current_new = $current_old - $difference_new;
+    $percentage_new = ($difference_new / $pclose) * 100;
+    $current_new = $pclose - $difference_new;
 }
 else if(strcmp($type,'percentage') == 0) {
     $percentage_new = -($value);
-    $difference_new = ($percentage_new * $current_old) / 100;
-    $current_new = $current_old - $difference_new;
+    $difference_new = ($percentage_new * $pclose) / 100;
+    $current_new = $pclose - $difference_new;
 }
 else {
     form_error();
