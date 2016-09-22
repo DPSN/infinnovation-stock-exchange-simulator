@@ -39,7 +39,7 @@ Last updated <?php echo date('d/m/y H:i:s'); ?><br>
             $string = "<tr class=\"persector $sector\">
             <td><a href=\"detail.php?sector=$sector#$name\">$name</a></td>
             <td>INR $current</td>
-            <td><span class=\"inverted triangle\">&#9650;</span>INR $difference</td>
+            <td><span class=\"inverted triangle\">&#9660;</span>INR $difference</td>
             <td class=\"loss\">$percentage%</td>
             </tr>\n";
         }

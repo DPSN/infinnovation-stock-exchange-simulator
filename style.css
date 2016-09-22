@@ -198,14 +198,11 @@ body {
 }
 .triangle {
     font-size: 150%;
-    display: inline-block;
 }
 .not_inverted {
-    transform: rotateX(0deg);
     color: green;
 }
 .inverted {
-    transform: rotateX(180deg);
     color: red;
 }
 .content1 h1 {
