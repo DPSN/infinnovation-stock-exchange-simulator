@@ -263,3 +263,7 @@ table#news td:nth-child(even) {
 	font-size: 100%;
 	padding: 4%;
 }
+.highlight {
+    color: #000;
+    background-color: yellow;
+}

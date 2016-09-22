@@ -7,20 +7,21 @@ body {
     background-color: #111;
 }
 .wrapper {
-    background-image: url(images/bg1.jpg);
+    background-image: url(../images/bg1.jpg);
     background-size: cover;
     background-attachment: fixed;
 
 }
 .header {
     width: 100%;
-    background-color: rgba(10%, 10%, 10%, 0.8);
+    background-color: rgba(100%, 100%, 100%, 0.8);
     min-height: 100%;
     text-align: center;
+    font-size: 60%;
 }
 .header > h1 {
     font-family: 'Raleway';
-    color: #fff;
+    color: #000;
     margin: 5%;
     margin-bottom: 2%;
     margin-top: 0%;
@@ -108,7 +109,7 @@ body {
 .content1 {
     overflow-x: auto;
     min-width: 100%;
-    background-color: #236;
+    background-color: #f1f1f1;;
     color: #fff;
     background-attachment: fixed;
     min-height: 100vh;
@@ -146,6 +147,7 @@ body {
 }
 .content1 div#stocks {
     font-family: 'Raleway';
+    color: #000;
 }
 .content1 table {
     display: inline-table;
@@ -153,7 +155,7 @@ body {
     margin-bottom: 2%;
     margin-left: 0;
     margin-right: 0;
-    font-size: 90%;
+    font-size: 120%;
     font-family: 'Raleway';
 }
 .content1 tr {
@@ -196,14 +198,11 @@ body {
 }
 .triangle {
     font-size: 150%;
-    display: inline-block;
 }
 .not_inverted {
-    transform: rotateX(0deg);
     color: green;
 }
 .inverted {
-    transform: rotateX(180deg);
     color: red;
 }
 .content1 h1 {
@@ -263,4 +262,34 @@ table#news td:nth-child(even) {
 	display: flex;
 	font-size: 100%;
 	padding: 4%;
+}
+.persector.Banking {
+    color: darkcyan;
+}
+.persector.Pharma {
+    color: chocolate;
+}
+.persector.Aviation {
+    color: black;
+}
+.persector.Information.Technology {
+    color: purple;
+}
+.persector.Fast.Moving.Consumer.Goods {
+    color: blue;
+}
+.persector.Engineering.and.Construction {
+    color: brown;
+}
+.persector.Telecom {
+    color: orange;
+}
+.persector.Automotive {
+    color: maroon;
+}
+.persector.Cement {
+    color: darkblue;
+}
+.persector.Oil.and.Gas {
+    color: darkviolet;
 }
