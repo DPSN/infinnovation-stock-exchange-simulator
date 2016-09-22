@@ -124,7 +124,7 @@ if(isset($_GET['sector'])) {
                     $max = max($calc);
                     $min = min($calc);
                     
-                    print("document.getElementById(\"summary $name\").innerHTML = document.getElementById(\"summary $name\").innerHTML + \"<strong>Highest Value:</strong>$max<br><strong>Lowest Value:</strong>$min<br><br>\"");
+                    print("document.getElementById(\"summary $name\").innerHTML = document.getElementById(\"summary $name\").innerHTML + \"<strong>Highest Value:</strong>$max<br><strong>Lowest Value:</strong>$min<br><br>\";");
                 }
                 ?>
             };
