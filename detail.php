@@ -1,4 +1,16 @@
 <?php
+// external code snippet to convert php array to js array
+function js_str($s)
+{
+    return '"' . addcslashes($s, "\0..\37\"\\") . '"';
+}
+
+function js_array($array)
+{
+    $temp = array_map('js_str', $array);
+    return '[' . implode(',', $temp) . ']';
+}
+
 $sector = "";
 if(isset($_GET['sector'])) {
     $sector = $_GET['sector'];
@@ -84,39 +96,27 @@ if(isset($_GET['sector'])) {
         <script src="chartjsinit.js"></script>
         <script>
             var main = function() {
-            <?php
-            // loop each stock name in the sector
-            foreach($stocknamelist as $name) {
-                $sql = "SELECT * FROM updates WHERE name='$name';";
-                $res = mysqli_query($db, $sql);
-                
-                $timear = array();
-                $currentar = array();
-                
-                // loop each update of current stock
-                while($ar = mysqli_fetch_array($res)) {
-                    $timear[] = $ar['time'];
-                    $currentar[] = $ar['current'];
-                }
-                
-                // external code snippet to convert php array to js array
-                function js_str($s)
-                {
-                    return '"' . addcslashes($s, "\0..\37\"\\") . '"';
-                }
+                <?php
+                // loop each stock name in the sector
+                foreach($stocknamelist as $name) {
+                    $sql = "SELECT * FROM updates WHERE name='$name';";
+                    $res = mysqli_query($db, $sql);
 
-                function js_array($array)
-                {
-                    $temp = array_map('js_str', $array);
-                    return '[' . implode(',', $temp) . ']';
+                    $timear = array();
+                    $currentar = array();
+
+                    // loop each update of current stock
+                    while($ar = mysqli_fetch_array($res)) {
+                        $timear[] = $ar['time'];
+                        $currentar[] = $ar['current'];
+                    }
+
+                    $timestr = js_array($timear);
+                    $currentstr = js_array($currentar);
+
+                    print("chartGenerate('$name', $timestr, $currentstr);\n");
                 }
-                
-                $timestr = js_array($timear);
-                $currentstr = js_array($currentar);
-                
-                print("chartGenerate('$name', $timestr, $currentstr);\n");
-            }
-            ?>
+                ?>
             };
             $(document).ready(main);
         </script>
