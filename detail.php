@@ -56,9 +56,9 @@ if(isset($_GET['sector'])) {
 
                 include_once('db.php');
             
-                $sql = "SELECT * FROM stocks WHERE sector='$sector';";
+                $sql = "SELECT * FROM stocks WHERE sector='$sector' ORDER BY name;";
                 if(strcmp($sector, "") == 0) {
-                    $sql = "SELECT * FROM stocks;";
+                    $sql = "SELECT * FROM stocks ORDER BY sector, name;";
                 }
                 $res = mysqli_query($db, $sql);
                 
@@ -82,7 +82,7 @@ if(isset($_GET['sector'])) {
                         $bvalue = $ar['bvalue'];
 
                         $string = "<h1 id=\"$name\">$name</h1>
-                        <p>$profile<br><br><strong>Previous Close:</strong> $pclose<br><strong>Open Value:</strong> $ovalue<br><strong>Lower Circuit:</strong> $lcircuit<br><strong>Upper Circuit:</strong> $ucircuit<br><strong>Dividend:</strong> $dividend<br><strong>Book Value:</strong> $bvalue</p>
+                        <p id=\"summary $name\">$profile<br><br><strong>Previous Close:</strong> $pclose<br><strong>Open Value:</strong> $ovalue<br><strong>Lower Circuit:</strong> $lcircuit<br><strong>Upper Circuit:</strong> $ucircuit<br><strong>Dividend:</strong> $dividend<br><strong>Book Value:</strong> $bvalue</p>
                         <canvas id=\"chart $name\"></canvas>
                         <br>
                         <br>";
@@ -115,6 +115,16 @@ if(isset($_GET['sector'])) {
                     $currentstr = js_array($currentar);
 
                     print("chartGenerate('$name', $timestr, $currentstr);\n");
+                    
+                    // append values of the highest and lowest values of the stock to the existing summary p
+                    $calc = array();
+                    foreach($currentar as $values) {
+                        $calc[] = intval($values);
+                    }
+                    $max = max($calc);
+                    $min = min($calc);
+                    
+                    print("document.getElementById(\"summary $name\").innerHTML = document.getElementById(\"summary $name\").innerHTML + \"<strong>Highest Value:</strong>$max<br><strong>Lowest Value:</strong>$min<br><br>\"");
                 }
                 ?>
             };
