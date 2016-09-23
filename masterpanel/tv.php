@@ -33,7 +33,6 @@
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-        <script async src="../base.js"></script>
         <script src="../stockupdate.js"></script>
     </body>
     <script>
