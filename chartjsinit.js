@@ -8,7 +8,7 @@ var chartGenerate = function(id, labels, values) {
               lineTension: 0,
               label: id,
               data: values,
-              backgroundColor: "rgba(200,200,200,0.0)",
+              backgroundColor: "rgba(200,200,200,0.06)",
               borderColor: "#eee"
           }]
       }

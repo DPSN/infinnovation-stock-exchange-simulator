@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="style.css" type="text/css" />
         <meta name="theme-color" content="#336">
+        <meta name="author" content="SwG Ghosh">
+        <meta name="description" content="Infinnovation Virtual Stock Exchange Simulator. The stock exchange simulator app for participants of Infinnovation's Infi-Invest.">
+        <meta name="og:image" content="https://www.infinnovation.co/simulatorlandscape.png">
+        <meta name="og:url" content="https://stockexchangesimulator.infinnovation.co/">
     </head>
     <body>
         <header>
