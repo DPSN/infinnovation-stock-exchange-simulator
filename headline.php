@@ -32,7 +32,11 @@
         <div class="content1">
             <br>
                 <h1>Headlines</h1>
-                <div id="stocks"></div>
+                <div id="stocks">
+                    <noscript>
+                        <?php include('newstable.php'); ?>
+                    </noscript>
+                </div>
             <br>
             <br>
         </div>
