@@ -163,6 +163,7 @@ body {
     background-color: #f1f1f1;
     color: #000;
     border: 2px solid white;
+	box-shadow: 0px 0px 10px #000000;
 }
 .content1 th {
     display: none;
