@@ -52,7 +52,7 @@
             print("<script>alert(\"Error in previous form submission! Stock Price not updated. Try again!\");</script>");
         }
         else if(isset($_GET['success'])) {
-            print("<script>alert(\"Successfully the stock price.\");</script>");
+            print("<script>alert(\"Successfully updated the stock price.\");</script>");
         }
         ?>
     </body>

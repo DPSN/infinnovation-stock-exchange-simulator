@@ -172,9 +172,9 @@ body {
     padding-right: 2vw;
 }
 .content1 td {
-	width: 4.5vw;
-	height: 6vh;
-    font-size: 1.2vw;
+	width: 5.1vw;
+	height: 4vh;
+    font-size: 1.0vw;
     overflow: hidden;
 	display: block;
     padding-top: 1vh;
@@ -305,7 +305,6 @@ table#news td:nth-child(even) {
 div#hidden {
     display: none;
 }
-/* Disable anchor links inside table */
 table tr td a {
     pointer-events: none;
     text-decoration: none;
@@ -314,7 +313,7 @@ table tr td a {
 div.overlay {
     font-family: 'Raleway';
     top: 0;
-	font-size: 3.8vh;
+	font-size: 3.1vh;
     height: 100%;
 	background-color: rgba(0,0,0,0.7);
     position: fixed;
