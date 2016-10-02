@@ -158,10 +158,10 @@ body {
     font-family: 'Raleway';
 }
 .content1 tr {
-    display: inline-block;
+	display: inline-flex;
     background-color: #fff;
     color: #000;
-    border: 2px solid teal;
+    border: 1px dashed black;
     margin: 0.1%;
 }
 .content1 th {
@@ -172,6 +172,8 @@ body {
     padding-right: 2vw;
 }
 .content1 td {
+	width: 5vw;
+	display: block;
     padding-top: 1vh;
     padding-bottom: 1vh;
     padding-left: 1vw;

@@ -20,7 +20,11 @@
         </header>
         <div class="content1">
             <br>
-                <div id="stocks"></div>
+                <div id="stocks">
+                    <noscript>
+                        <?php include('stocktable.php'); ?>
+                    </noscript>
+                </div>
             <br><div id="hidden"></div>
             <br>
         </div>
