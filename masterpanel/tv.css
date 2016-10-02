@@ -20,6 +20,7 @@ body {
 }
 .header > h1 {
     font-family: 'Raleway';
+    font-size: 40%;
     color: #fff;
     margin: 5%;
     margin-bottom: 2%;
@@ -195,7 +196,7 @@ body {
     padding-left: 3vw;
     padding-right: 3vw;
 	font-size: 130%;
-	text-align: right;
+	text-align: center;
 	font-family: 'Raleway';
 }
 .triangle {
