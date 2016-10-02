@@ -14,14 +14,13 @@ body {
 }
 .header {
     width: 100%;
-    background-color: rgba(100%, 100%, 100%, 0.8);
+    background-color: rgba(10%, 10%, 10%, 0.8);
     min-height: 100%;
     text-align: center;
-    font-size: 60%;
 }
 .header > h1 {
     font-family: 'Raleway';
-    color: #000;
+    color: #fff;
     margin: 5%;
     margin-bottom: 2%;
     margin-top: 0%;
@@ -45,7 +44,7 @@ body {
 .header > #imageatr > img {
     width: 5%;
     margin-bottom: 0%;
-    margin-left: 5%;
+    margin-left: 0%;
     background-color: rgba(10%, 10%, 10%, 0.8);
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0%, 0%, 0%, 0.9);
@@ -109,8 +108,8 @@ body {
 .content1 {
     overflow-x: auto;
     min-width: 100%;
-    background-color: #f1f1f1;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     background-attachment: fixed;
     min-height: 100vh;
     height: 120%;
@@ -160,10 +159,10 @@ body {
 }
 .content1 tr {
     display: inline-block;
-    background-color: #f1f1f1;
+    background-color: #fff;
     color: #000;
-    border: 2px solid white;
-	box-shadow: 0px 0px 10px #000000;
+    border: 2px solid teal;
+    margin: 0.1%;
 }
 .content1 th {
     display: none;
@@ -300,4 +299,10 @@ table#news td:nth-child(even) {
 }
 div#hidden {
     display: none;
+}
+/* Disable anchor links inside table */
+table tr td a {
+    pointer-events: none;
+    text-decoration: none;
+    cursor: default;
 }
