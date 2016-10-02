@@ -20,10 +20,9 @@ body {
 }
 .header > h1 {
     font-family: 'Raleway';
-    font-size: 40%;
     color: #fff;
     margin: 5%;
-    margin-bottom: 2%;
+    margin-bottom: 0%;
     margin-top: 0%;
 }
 .header > h1 > small {
@@ -173,7 +172,10 @@ body {
     padding-right: 2vw;
 }
 .content1 td {
-	width: 5vw;
+	width: 4.5vw;
+	height: 6vh;
+    font-size: 1.2vw;
+    overflow: hidden;
 	display: block;
     padding-top: 1vh;
     padding-bottom: 1vh;
@@ -308,4 +310,22 @@ table tr td a {
     pointer-events: none;
     text-decoration: none;
     cursor: default;
+}
+div.overlay {
+    font-family: 'Raleway';
+    top: 0;
+	font-size: 3.8vh;
+    height: 100%;
+	background-color: rgba(0,0,0,0.7);
+    position: fixed;
+	color: #fff;
+    width: 5vw;
+}
+div.overlay.left {
+    float: left;
+    left: 0;
+}
+div.overlay.right {
+    float: right;
+	right: 0;
 }
