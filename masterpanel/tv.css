@@ -152,7 +152,7 @@ body {
     display: inline-table;
     margin-top: 2%;
     margin-bottom: 2%;
-    margin-left: 0;
+    margin-left: 3vw;
     margin-right: 0;
     font-size: 120%;
     font-family: 'Raleway';
@@ -172,15 +172,13 @@ body {
     padding-right: 2vw;
 }
 .content1 td {
-	width: 5.1vw;
-	height: 4vh;
-    font-size: 1.0vw;
     overflow: hidden;
 	display: block;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
+	font-size: 130%;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
 }
 .content1 td a {
     color: inherit;
@@ -318,7 +316,7 @@ div.overlay {
 	background-color: rgba(0,0,0,0.7);
     position: fixed;
 	color: #fff;
-    width: 5vw;
+    width: 3vw;
 }
 div.overlay.left {
     float: left;
@@ -327,4 +325,5 @@ div.overlay.left {
 div.overlay.right {
     float: right;
 	right: 0;
+	display: none;
 }
