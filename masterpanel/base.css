@@ -1,6 +1,9 @@
 body {
     font-family: 'Raleway';
     margin: 8%;
+    color: #eee;
+    background-color: #111;
+    font-size: 0.8em;
 }
 th, td {
     padding: 30px;
@@ -16,13 +19,15 @@ ul {
     list-style-type: none;
 }
 li {
+    font-size: 1.2rem;
     display: flex;
-    padding: 2%;
-    margin: 1%;
+    padding: 20px;
+    margin: 2%;
     margin-left: 0%;
-    background-color: rgba(10, 10, 10, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     width: 50%;
+    border-radius: 2em;
 }
 li a {
     color: #fff;
@@ -34,11 +39,11 @@ li a:hover {
 }
 a {
     text-decoration: underline;
-    color: #000;
+    color: #ccc;
 }
 a:hover {
     text-decoration: none;
-    color: #333;
+    color: #eee;
 }
 iframe {
     width: 80vw;
@@ -56,15 +61,17 @@ textarea:focus {
 }
 button {
     border: 2px solid black;
-    background-color: #eee;
-    color: #111;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #eee;
     padding: 1%;
     font-family: 'Raleway';
     font-size: 120%;
+    border-radius: 2em;
+    padding: 20px;
 }
 button:hover {
     color: #eee;
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.98);
 }
 input[type=number] {
     font-size: 150%;
