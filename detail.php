@@ -20,7 +20,7 @@ if(isset($_GET['sector'])) {
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Infinnovation'16 Stock Exchange Simulator</title>
+        <title>Infinnovation Stock Exchange Simulator</title>
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="style.css" type="text/css" />
         <meta name="theme-color" content="#336">
@@ -132,7 +132,7 @@ if(isset($_GET['sector'])) {
         </script>
         <footer>
             <div class="foot">
-                <br>&copy; Infinnovation'16.<br>Made with <span class="heart">&hearts;</span> and JavaScript.<br><br>
+                <br>&copy; Infinnovation.<br>Made with <span class="heart">&hearts;</span> and JavaScript.<br><br>
             </div>
         </footer>
     </body>
