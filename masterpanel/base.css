@@ -59,20 +59,30 @@ textarea {
 textarea:focus {
     font-family: 'Raleway';
 }
+form {
+    font-size: 1.3em;
+}
 button {
-    border: 2px solid black;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #eee;
-    padding: 1%;
+    border: none;
+    background-color: #eee;
+    color: #111;
     font-family: 'Raleway';
-    font-size: 120%;
+    font-size: 1.1em;
     border-radius: 2em;
-    padding: 20px;
+    padding: 0.5em;
 }
 button:hover {
     color: #eee;
-    background-color: rgba(0, 0, 0, 0.98);
+    background-color: rgba(70, 70, 70, 0.7);
 }
 input[type=number] {
-    font-size: 150%;
+    font-size: 1.2em;;
+    border-radius: 1.2em;
+    text-align: center;
+}
+input[type=radio] {
+    margin-right: 5%;
+}
+select {
+    font-size: 3em;
 }
