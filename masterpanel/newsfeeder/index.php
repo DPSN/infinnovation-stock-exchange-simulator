@@ -14,7 +14,7 @@
         <br>
         Feed operation:<br>
         <form method="POST" action="postnews.php">
-            <textarea name="message"></textarea>
+            <textarea name="message" placeholder="Type in the new news item content here!"></textarea>
             <br>
             <button type="submit">Post News</button>
         </form>

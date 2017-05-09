@@ -30,7 +30,7 @@
             </select>
             <br>
             <br>
-            <input name="value" type="number">
+            <input name="value" type="number" placeholder="value">
             <br>
             <br>
             <input name="type" type="radio" value="current">Stock Price Update<br>
