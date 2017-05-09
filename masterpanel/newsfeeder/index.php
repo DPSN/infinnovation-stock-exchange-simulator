@@ -9,7 +9,7 @@
     </head>
     <body>
         <img src="../../images/logo.png">
-        <h1><a href="../">Infinnovation Stock Exchange Simulator Master Panel</a> | News Post Section</h1>
+        <h1><a href="../">Infinnovation Stock Exchange Simulator Master Panel</a><br><small>News Post Section</small></h1>
         <p><sup>*</sup> Do not use this panel without the permission/authorisation by Infinnovation Stock Exchange Board.</p>
         <br>
         Feed operation:<br>

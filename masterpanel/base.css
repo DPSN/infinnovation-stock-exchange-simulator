@@ -38,12 +38,12 @@ a.btn {
     text-decoration: none;
 }
 a {
-    text-decoration: underline;
-    color: #ccc;
-}
-a:hover {
     text-decoration: none;
     color: #eee;
+}
+a:hover {
+    text-decoration: underline;
+    color: #ccc;
 }
 iframe {
     width: 80vw;
