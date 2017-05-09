@@ -55,6 +55,10 @@ textarea {
     width: 50vw;
     height: 30vh;
     font-family: 'Raleway';
+    border-radius: 1em;
+    margin: 2%;
+    text-align: center;
+    font-size: 1em;
 }
 textarea:focus {
     font-family: 'Raleway';
