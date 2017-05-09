@@ -29,13 +29,13 @@ li {
     width: 50%;
     border-radius: 2em;
 }
-li a {
+li:hover {
+    color: #eee;
+    background-color: rgba(70, 70, 70, 0.7);
+}
+a.btn {
     color: #fff;
     text-decoration: none;
-}
-li a:hover {
-    text-decoration: underline;
-    color: #ccc;
 }
 a {
     text-decoration: underline;
