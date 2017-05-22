@@ -1,19 +1,9 @@
 <?php
-// external code snippet to convert php array to js array
-function js_str($s)
-{
-    return '"' . addcslashes($s, "\0..\37\"\\") . '"';
-}
-
-function js_array($array)
-{
-    $temp = array_map('js_str', $array);
-    return '[' . implode(',', $temp) . ']';
-}
+include_once('db.php');
 
 $sector = "";
 if(isset($_GET['sector'])) {
-    $sector = $_GET['sector'];
+    $sector = mysqli_escape_string($db, $_GET['sector']);
 }
 ?>
 <!DOCTYPE html>
@@ -53,8 +43,6 @@ if(isset($_GET['sector'])) {
             <br>
                 <pre class="sector"><?php if(strcmp($sector, "") == 0) { echo "All Sectors"; } else { echo $sector." Sector"; } ?></pre>
                 <?php
-
-                include_once('db.php');
             
                 $sql = "SELECT * FROM stocks WHERE sector='$sector' ORDER BY name;";
                 if(strcmp($sector, "") == 0) {
@@ -111,8 +99,8 @@ if(isset($_GET['sector'])) {
                         $currentar[] = $ar['current'];
                     }
 
-                    $timestr = js_array($timear);
-                    $currentstr = js_array($currentar);
+                    $timestr = json_encode($timear);
+                    $currentstr = json_encode($currentar);
 
                     print("chartGenerate('$name', $timestr, $currentstr);\n");
                     
