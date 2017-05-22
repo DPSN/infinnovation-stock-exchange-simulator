@@ -86,10 +86,14 @@ input[type=number] {
     font-size: 1.2em;;
     border-radius: 1.2em;
     text-align: center;
+    margin: 2%;
+    font-family: 'Raleway';
 }
 input[type=radio] {
     margin-right: 5%;
 }
 select {
-    font-size: 3em;
+    font-size: 1em;
+    margin: 2%;
+    font-family: 'Raleway';
 }
