@@ -48,6 +48,9 @@ a:hover {
     text-decoration: underline;
     color: #ccc;
 }
+small {
+    line-height: 1.5em;
+}
 iframe {
     width: 80vw;
     height: 90vh;

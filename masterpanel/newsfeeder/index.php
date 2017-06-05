@@ -3,16 +3,16 @@
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <title>Infinnovation Stock Exchange Simulator Master Panel | News Post Section</title>
+        <title>Infinnovation Stock Exchange Simulator Master Panel | Add News Item Section</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../base.css">
     </head>
     <body>
         <img src="../../images/logo.png">
-        <h1><a href="../">Infinnovation Stock Exchange Simulator Master Panel</a><br><small>News Post Section</small></h1>
+        <h1><a href="../">Infinnovation Stock Exchange Simulator Master Panel</a><br><small>Add News Item Section</small></h1>
         <p><sup>*</sup> Do not use this panel without the permission/authorisation by Infinnovation Stock Exchange Board.</p>
         <br>
-        Feed operation:<br>
+        Add operation:<br>
         <form method="POST" action="postnews.php">
             <textarea name="message" placeholder="Type in the new news item content here!"></textarea>
             <br>
