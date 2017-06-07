@@ -23,10 +23,10 @@
         </footer>
         <?php
         if(isset($_GET['error'])) {
-            print("<script>alert(\"Error in previous form submission! Stock Price not updated. Try again!\");</script>");
+            print("<script>alert(\"Error in previous form submission! Stock Price not rolled back. Try again!\");</script>");
         }
         else if(isset($_GET['success'])) {
-            print("<script>alert(\"Successfully updated the stock price.\");</script>");
+            print("<script>alert(\"Successfully rolled back the stock update.\");</script>");
         }
         ?>
     </body>

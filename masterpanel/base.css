@@ -100,3 +100,25 @@ select {
     margin: 2%;
     font-family: 'Raleway';
 }
+table {
+    max-width: 80vw;
+    margin: 2%;
+}
+td {
+    display: block;
+    padding: 0;
+}
+td.time {
+    text-decoration: underline;
+}
+td.content {
+    font-size: 1.3em;
+}
+td.button {
+    padding: 1em;
+}
+tr {
+    margin: 5%;
+    display: block;
+    border-bottom: 0.3px dashed #999;
+}

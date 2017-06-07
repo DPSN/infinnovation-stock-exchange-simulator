@@ -13,7 +13,22 @@
         <p><sup>*</sup> Do not use this panel without the permission/authorisation by Infinnovation Stock Exchange Board.</p>
         <br>
         Rollback operation:<br>
-        
+        <table>
+            <?php
+            include('../../db.php');
+                
+            $sql = "SELECT * FROM news ORDER BY time DESC;";
+            $res = mysqli_query($db, $sql);
+            
+            while($ar = mysqli_fetch_array($res)) {
+                $time = $ar['time'];
+                $content = $ar['content'];
+                $id = $ar['id'];
+                $str = "<tr> <form method=\"POST\" action=\"rollbacknews.php\"> <input type=\"hidden\" name=\"id\" value=\"".$id."\"> <input type=\"hidden\" name=\"time\" value=\"".$time."\"> <td class=\"time\">".$time."</td> <td class=\"content\">".$content."</td> <td class=\"button\"><button type=\"submit\">Rollback</button></td> </form> </tr>\n";
+                print($str);
+            }
+            ?>
+        </table>
         <br><br>
         <footer>
               &copy; Infinnovation.<br/>
@@ -26,7 +41,7 @@
             print("<script>alert(\"Error in previous form submission! News item rollback was unsuccessful. Try again!\");</script>");
         }
         else if(isset($_GET['success'])) {
-            print("<script>alert(\"Successfully posted your news item.\");</script>");
+            print("<script>alert(\"Successfully rolled back your news item.\");</script>");
         }
         ?>
     </body>
