@@ -12,7 +12,7 @@
             <div class="wrapper">
                 <div class="header">
                     <br/>
-                    <div id="imageatr"><img src="../images/logo.png"></div>
+                    <div id="imageatr"><img src="../../images/logo.png"></div>
                     <h1>Infinnovation Stock Exchange Simulator  <span id="tagline">(Infi-Invest)</span></h1>
                     <br/>
                 </div>
@@ -22,7 +22,7 @@
             <br>
                 <div id="stocks">
                     <noscript>
-                        <?php include('stocktable.php'); ?>
+                        <?php include('../../stocktable.php'); ?>
                     </noscript>
                 </div>
             <br><div id="hidden"></div>
@@ -36,10 +36,8 @@
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br><br>
             </div>
         </footer>
-        <div class="left overlay">&nbsp;&nbsp;I<br>&nbsp;&nbsp;N<br>&nbsp;&nbsp;F<br>&nbsp;&nbsp;I<br>&nbsp;&nbsp;N<br>&nbsp;&nbsp;N<br>&nbsp;&nbsp;O<br>&nbsp;&nbsp;V<br>&nbsp;&nbsp;A<br>&nbsp;&nbsp;T<br>&nbsp;&nbsp;I<br>&nbsp;&nbsp;O<br>&nbsp;&nbsp;N<br>&nbsp;&nbsp;1<br>&nbsp;&nbsp;6<br>&nbsp;&nbsp;I<br>&nbsp;&nbsp;N<br>&nbsp;&nbsp;F<br>&nbsp;&nbsp;I<br>&nbsp;&nbsp;-<br>&nbsp;&nbsp;I<br>&nbsp;&nbsp;N<br>&nbsp;&nbsp;V<br>&nbsp;&nbsp;E<br>&nbsp;&nbsp;S<br>&nbsp;&nbsp;T</div>
-        <div class="right overlay">&nbsp;&nbsp;I<br>&nbsp;&nbsp;N<br>&nbsp;&nbsp;F<br>&nbsp;&nbsp;I<br>&nbsp;&nbsp;N<br>&nbsp;&nbsp;N<br>&nbsp;&nbsp;O<br>&nbsp;&nbsp;V<br>&nbsp;&nbsp;A<br>&nbsp;&nbsp;T<br>&nbsp;&nbsp;I<br>&nbsp;&nbsp;O<br>&nbsp;&nbsp;N<br>&nbsp;&nbsp;1<br>&nbsp;&nbsp;6<br>&nbsp;&nbsp;I<br>&nbsp;&nbsp;N<br>&nbsp;&nbsp;F<br>&nbsp;&nbsp;I<br>&nbsp;&nbsp;-<br>&nbsp;&nbsp;I<br>&nbsp;&nbsp;N<br>&nbsp;&nbsp;V<br>&nbsp;&nbsp;E<br>&nbsp;&nbsp;S<br>&nbsp;&nbsp;T</div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-        <script src="../stockupdate.js"></script>
+        <script src="../../stockupdate.js"></script>
     </body>
     <script>
         var loadStocksLater = function(uri) {
@@ -71,11 +69,11 @@
         xhttp.send();
         };
         function refreshInit() {
-            loadStocksInit("../stocktable.php");
+            loadStocksInit("../../stocktable.php");
         }
         refreshInit();
         function refreshLater() {
-            loadStocksLater("../stocktable.php");
+            loadStocksLater("../../stocktable.php");
         }
         setInterval(refreshLater, 10000);
     </script>

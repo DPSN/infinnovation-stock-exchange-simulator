@@ -13,7 +13,7 @@
         <p><sup>*</sup> Do not use this panel without the permission/authorisation by Infinnovation Stock Exchange Board.</p>
         <br>
         Rollback operation:<br>
-        <table>
+        <table class="newsr">
             <?php
             include('../../db.php');
                 

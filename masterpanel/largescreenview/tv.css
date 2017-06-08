@@ -308,22 +308,3 @@ table tr td a {
     text-decoration: none;
     cursor: default;
 }
-div.overlay {
-    font-family: 'Raleway';
-    top: 0;
-	font-size: 3.1vh;
-    height: 100%;
-	background-color: rgba(0,0,0,0.7);
-    position: fixed;
-	color: #fff;
-    width: 3vw;
-}
-div.overlay.left {
-    float: left;
-    left: 0;
-}
-div.overlay.right {
-    float: right;
-	right: 0;
-	display: none;
-}

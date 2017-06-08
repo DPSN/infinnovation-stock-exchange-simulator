@@ -74,8 +74,8 @@ form {
 }
 button {
     border: none;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
     font-family: 'Raleway';
     font-size: 1.1em;
     border-radius: 2em;
@@ -101,23 +101,24 @@ select {
     font-family: 'Raleway';
 }
 table {
+    display: flex;
     max-width: 80vw;
     margin: 2%;
 }
-td {
+table.newsr td {
     display: block;
     padding: 0;
 }
-td.time {
+table.newsr td.time {
     text-decoration: underline;
 }
-td.content {
+table.newsr td.content {
     font-size: 1.3em;
 }
-td.button {
+table.newsr td.button {
     padding: 1em;
 }
-tr {
+table.newsr tr {
     margin: 5%;
     display: block;
     border-bottom: 0.3px dashed #999;

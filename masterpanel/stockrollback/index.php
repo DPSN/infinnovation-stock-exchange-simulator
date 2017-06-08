@@ -13,7 +13,27 @@
         <p><sup>*</sup> Do not use this panel without the permission/authorisation by Infinnovation Stock Exchange Board.</p>
         <br>
         Rollback operation:<br>
-        
+        <select name="name" id="stockselect">
+            <?php
+            include('../../db.php');
+            
+            $sql = "SELECT name FROM stocks ORDER BY name;";
+            $res = mysqli_query($db, $sql);
+            
+            print("<option value=\"\">--select--</option>\n");
+
+            while($ar = mysqli_fetch_array($res)) {
+                $name = $ar['name'];
+                $str = "<option value=\"$name\">$name</option>\n";
+                print($str);
+            }
+            ?>
+        </select>
+        <br>
+        <br>
+        <div id="table">
+            Please select a stock first!
+        </div>
         <br><br>
         <footer>
               &copy; Infinnovation.<br/>
@@ -29,5 +49,9 @@
             print("<script>alert(\"Successfully rolled back the stock update.\");</script>");
         }
         ?>
+        <script src="tableloader.js"></script>
+        <script>
+            document.querySelector('select').onchange = populate;
+        </script>
     </body>
 </html>
