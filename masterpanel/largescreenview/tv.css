@@ -12,6 +12,11 @@ body {
     background-attachment: fixed;
 
 }
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
 .header {
     width: 100%;
     background-color: rgba(10%, 10%, 10%, 0.8);

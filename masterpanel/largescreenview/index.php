@@ -12,13 +12,17 @@
             <div class="wrapper">
                 <div class="header">
                     <br/>
-                    <div id="imageatr"><img src="../../images/logo.png"></div>
                     <h1>Infinnovation Stock Exchange Simulator  <span id="tagline">(Infi-Invest)</span></h1>
                     <br/>
                 </div>
             </div>
         </header>
         <div class="content1">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <br>
                 <div id="stocks">
                     <noscript>
