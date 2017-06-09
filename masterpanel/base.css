@@ -25,13 +25,15 @@ li {
     margin: 2%;
     margin-left: 0%;
     background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 5px black;
     color: #fff;
     width: 50%;
-    border-radius: 2em;
+    border-radius: 0.7em;
 }
 li:hover {
     color: #eee;
     background-color: rgba(70, 70, 70, 0.7);
+    box-shadow: 0 0 8px #457;
 }
 a.btn {
     color: #fff;
@@ -59,18 +61,18 @@ iframe {
 }
 textarea {
     width: 50vw;
-    height: 30vh;
+    height: 5vh;
     font-family: 'Raleway';
-    border-radius: 1em;
     margin: 2%;
     text-align: center;
     font-size: 1em;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: none;
+    border-bottom: white solid 0.5px;
 }
 textarea:focus {
     font-family: 'Raleway';
-}
-form {
-    font-size: 1.3em;
 }
 button {
     border: none;
@@ -86,19 +88,25 @@ button:hover {
     background-color: rgba(70, 70, 70, 0.7);
 }
 input[type=number] {
-    font-size: 1.2em;;
-    border-radius: 1.2em;
+    font-size: 1.2em;
     text-align: center;
     margin: 2%;
     font-family: 'Raleway';
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: none;
+    border-bottom: white solid 0.5px;
 }
 input[type=radio] {
-    margin-right: 5%;
+    margin-right: 2.5%;
+    background-color: rgba(0, 0, 0, 0);
 }
 select {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 2%;
     font-family: 'Raleway';
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
 }
 table {
     display: flex;

@@ -7,10 +7,7 @@ body {
     background-color: #111;
 }
 .wrapper {
-    background-image: url(../images/bg1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-
+    background-color: rgba(0, 0, 0, 0.5);
 }
 header {
     top: 0;
