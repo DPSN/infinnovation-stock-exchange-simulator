@@ -106,8 +106,8 @@ select {
     font-size: 1.2em;
     margin: 2%;
     font-family: 'Raleway';
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 table {
     display: flex;

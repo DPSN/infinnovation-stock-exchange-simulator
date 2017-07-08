@@ -14,7 +14,7 @@ $name = mysqli_real_escape_string($db, htmlspecialchars($_POST['name']));
 $time = mysqli_real_escape_string($db, htmlspecialchars($_POST['time']));
 
 $sql = "DELETE FROM updates WHERE name='".$name."' AND time='".$time."';";
-$sql2 = "SELECT current, difference, percentage FROM updates WHERE name = '".$name."' ORDER BY time DESC LIMIT 1;";
+$sql2 = "SELECT current, difference, percentage FROM updates WHERE name = '".$name."' ORDER BY id DESC LIMIT 1;";
 
 $res = mysqli_query($db, $sql);
 $res2 = mysqli_query($db, $sql2);

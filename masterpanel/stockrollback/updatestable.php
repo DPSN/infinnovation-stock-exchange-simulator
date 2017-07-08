@@ -10,7 +10,7 @@ if(isset($_GET['name']) == false || empty($_GET['name'])) {
 $name = mysqli_real_escape_string($db, htmlspecialchars($_GET['name']));
 print($name);
 
-$sql = "SELECT * FROM updates WHERE name = \"".$name."\" ORDER BY time DESC;";
+$sql = "SELECT * FROM updates WHERE name = \"".$name."\" ORDER BY id DESC;";
 $res = mysqli_query($db, $sql);
 
 while($ar = mysqli_fetch_array($res)) {
