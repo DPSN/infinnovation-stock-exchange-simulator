@@ -25,7 +25,7 @@ $difference = $pclose - $ovalue;
 $percentage = ($difference / $pclose) * 100;
 
 // database query statements
-$sql = "INSERT INTO stocks (name, sector, current, difference, percentage, pclose, ovalue, lcircuit, ucircuit, bvalue, dividend, profile) VALUES ('$name', '$sector', $current, $difference, $percentage, $pclose, $ovalue, $lcircuit, $ucircuit, $bvalue, $dividend, $profile);";
+$sql = "INSERT INTO stocks (name, sector, current, difference, percentage, pclose, ovalue, lcircuit, ucircuit, bvalue, dividend, profile) VALUES ('$name', '$sector', $current, $difference, $percentage, $pclose, $ovalue, $lcircuit, $ucircuit, $bvalue, $dividend, '$profile');";
 date_default_timezone_set('Asia/Kolkata');
 $time = date('d/m/y H:i');
 $sql2 = "INSERT INTO updates (name, current, difference, percentage, time) VALUES ('$name', 0, 0, 0, '$time'), ('$name', $current, $difference, $percentage, '$time');";
