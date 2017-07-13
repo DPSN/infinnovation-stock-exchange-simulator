@@ -71,7 +71,7 @@ if(isset($_GET['sector'])) {
 
                         $string = "<h1 id=\"$name\">$name</h1>
                         <p id=\"summary $name\">$profile<br><br><strong>Previous Close:</strong> $pclose<br><strong>Open Value:</strong> $ovalue<br><strong>Lower Circuit:</strong> $lcircuit<br><strong>Upper Circuit:</strong> $ucircuit<br><strong>Dividend:</strong> $dividend<br><strong>Book Value:</strong> $bvalue</p>
-                        <canvas id=\"chart $name\"></canvas>
+                        <canvas id=\"chart $name\" class=\"graph\"></canvas>
                         <br>
                         <br>";
                         print($string);
