@@ -115,6 +115,10 @@ body {
     height: 120%;
     text-align: center;
 }
+footer {
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .foot {
     width: 100%;
     background-color: #111;

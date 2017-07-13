@@ -47,6 +47,7 @@
             <div class="foot">
                 <br>&copy; Infinnovation.<br>
                 Designed and Developed by <a href="https://facebook.com/swghosh" target="_blank" onclick="window.open('https://www.github.com/swghosh');">Swarup Ghosh</a>.<br>
+                <small>For more information refer to the <a href="https://github.com/DPSN/infinnovation-stock-exchange-simulator/blob/master/LICENSE.MD">software license terms</a> associated with this project.</small><br>
                 <a href="https://twitter.com/SwG_Ghosh" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @SwG_Ghosh</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br><br>
             </div>
