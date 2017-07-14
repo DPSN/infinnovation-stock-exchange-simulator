@@ -120,7 +120,8 @@ if(isset($_GET['sector'])) {
         </script>
         <footer>
             <div class="foot">
-                <br>&copy; Infinnovation.<br>Made with <span class="heart">&hearts;</span> and JavaScript.<br><br>
+                <br>&copy; Infinnovation.<br>
+                <small>For more information refer to the <a href="https://github.com/DPSN/infinnovation-stock-exchange-simulator/blob/master/LICENSE.MD">software license terms</a> associated with this project.</small><br><br>
             </div>
         </footer>
     </body>
