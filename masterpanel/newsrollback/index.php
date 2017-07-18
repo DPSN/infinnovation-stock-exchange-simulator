@@ -24,7 +24,7 @@
                 $time = $ar['time'];
                 $content = $ar['content'];
                 $id = $ar['id'];
-                $str = "<tr> <form method=\"POST\" action=\"rollbacknews.php\"> <input type=\"hidden\" name=\"id\" value=\"".$id."\"> <input type=\"hidden\" name=\"time\" value=\"".$time."\"> <td class=\"time\">".$time."</td> <td class=\"content\">".$content."</td> <td class=\"button\"><button type=\"submit\">Rollback</button></td> </form> </tr>\n";
+                $str = "<tr> <form id=\"".$id."\" method=\"POST\" action=\"rollbacknews.php\"> <input type=\"hidden\" name=\"id\" value=\"".$id."\" form=\"".$id."\"> <input type=\"hidden\" name=\"time\" value=\"".$time."\" form=\"".$id."\"> <td class=\"time\">".$time."</td> <td class=\"content\">".$content."</td> <td class=\"button\"><button form=\"".$id."\" type=\"submit\">Rollback</button></td> </form> </tr>\n";
                 print($str);
             }
             ?>
