@@ -193,8 +193,8 @@ footer {
     color: green;
 }
 .content1 td.sector {
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 3%;
+    padding-bottom: 3%;
     padding-left: 3vw;
     padding-right: 3vw;
 	font-size: 130%;
@@ -237,7 +237,8 @@ canvas.graph {
     max-height: 300px;
     max-width: 600px;
     border: 0.1px solid rgba(255, 255, 255, 0.3);
-    padding: 2%;
+    padding: 1%;
+    margin: -2%;
 }
 pre.sector {
     margin-left: 5%;
