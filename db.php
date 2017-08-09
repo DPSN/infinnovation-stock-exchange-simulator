@@ -1,8 +1,9 @@
 <?php
 //Set database settings
-$host = getenv("AWS_RDS_INSTANCE_MYSQL_DB_HOST");
-$username = getenv("AWS_RDS_INSTANCE_MYSQL_DB_USERNAME");
-$password = getenv("AWS_RDS_INSTANCE_MYSQL_DB_PASSWORD");
-$database = "infinnovationses";
+$host = getenv("OTHER_OPENSHIFT_APP_MYSQL_DB_HOST");
+$username = getenv("OTHER_OPENSHIFT_APP_MYSQL_DB_USERNAME");
+$password = getenv("OTHER_OPENSHIFT_APP_MYSQL_DB_PASSWORD");
+$port = getenv("OTHER_OPENSHIFT_APP_MYSQL_DB_PORT");
+$database = "infinnovationsesdb";
 //-----------------------------
-$db = mysqli_connect($host, $username, $password, $database) or die("Database connection failed.");
+$db = mysqli_connect($host, $username, $password, $database, $port) or die("Database connection failed.");
