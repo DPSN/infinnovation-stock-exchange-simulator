@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Restricted Content"
-AuthUserFile /var/lib/openshift/57d326757628e101210000b2/app-root/runtime/repo/masterpanel/.htpasswd
+AuthUserFile /var/lib/openshift/598ae1502d5271fb2e00001e/app-root/runtime/repo/masterpanel/.htpasswd
 Require valid-user
