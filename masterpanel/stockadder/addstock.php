@@ -28,7 +28,7 @@ $percentage = ($difference / $pclose) * 100;
 $sql = "INSERT INTO stocks (name, sector, current, difference, percentage, pclose, ovalue, lcircuit, ucircuit, bvalue, dividend, profile) VALUES ('$name', '$sector', $current, $difference, $percentage, $pclose, $ovalue, $lcircuit, $ucircuit, $bvalue, $dividend, '$profile');";
 date_default_timezone_set('Asia/Kolkata');
 $time = date('d/m/y H:i');
-$sql2 = "INSERT INTO updates (name, current, difference, percentage, time) VALUES ('$name', 0, 0, 0, '$time'), ('$name', $current, $difference, $percentage, '$time');";
+$sql2 = "INSERT INTO updates (name, current, difference, percentage, time) VALUES ('$name', $pclose, 0, 0, '$time'), ('$name', $current, $difference, $percentage, '$time');";
 
 if(mysqli_query($db, $sql) == false || mysqli_query($db, $sql2) == false) {
     form_error();
