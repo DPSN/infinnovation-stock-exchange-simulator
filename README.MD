@@ -1,4 +1,4 @@
-![App](https://s12.postimg.org/v55rlpgrx/stockexchangesimulator_infinnovation_co_i_Phone.png)
+![App](https://swghosh.github.io/images/infisesweb.png)
 # Infinnovation Stock Exchange Simulator
 
 https://stockexchangesimulator.infinnovation.co/
